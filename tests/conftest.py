@@ -9,16 +9,35 @@ from bridge.config.settings import Settings
 
 
 class FakeRunner:
-    def __init__(self, final_text: str = "fake-response", should_raise: Exception | None = None):
+    def __init__(
+        self,
+        final_text: str = "fake-response",
+        should_raise: Exception | None = None,
+        stream_messages: list | None = None,
+    ):
         self.final_text = final_text
         self.should_raise = should_raise
+        self.stream_messages = stream_messages or []
         self.calls: list[str] = []
+        self._current_context_id: str | None = None
 
-    async def run(self, prompt: str) -> RunResult:
+    def current_context_id(self) -> str | None:
+        return self._current_context_id
+
+    async def run(self, prompt: str, context_id: str | None = None):
+        self._current_context_id = context_id
         self.calls.append(prompt)
         if self.should_raise:
             raise self.should_raise
         return RunResult(final_text=self.final_text, messages=[])
+
+    async def stream(self, prompt: str, context_id: str | None = None):
+        self._current_context_id = context_id
+        self.calls.append(prompt)
+        if self.should_raise:
+            raise self.should_raise
+        for m in self.stream_messages:
+            yield m
 
 
 @pytest.fixture

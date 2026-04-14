@@ -87,7 +87,17 @@ def test_get_task_unknown_returns_404(client):
 def test_message_stream_emits_sse_events(client, fake_runner):
     import json
 
-    fake_runner.final_text = "streamed hello"
+    class _Block:
+        def __init__(self, text):
+            self.text = text
+    class _Msg:
+        def __init__(self, blocks):
+            self.content = blocks
+    class _Result:
+        def __init__(self, text):
+            self.result = text
+
+    fake_runner.stream_messages = [_Msg([_Block("Hel")]), _Msg([_Block("lo")]), _Result("Hello")]
     payload = {
         "jsonrpc": "2.0",
         "id": "req-s",
@@ -100,9 +110,11 @@ def test_message_stream_emits_sse_events(client, fake_runner):
         body = b"".join(r.iter_bytes()).decode()
 
     frames = [line[len("data: "):] for line in body.splitlines() if line.startswith("data: ")]
-    assert len(frames) >= 3  # task + working + completed
     parsed = [json.loads(f) for f in frames]
-    assert parsed[0]["result"]["kind"] == "task"
+    kinds = [p["result"].get("kind") for p in parsed]
+
+    assert kinds[0] == "task"
+    assert "artifact-update" in kinds
+    assert kinds[-1] == "status-update"
     assert parsed[-1]["result"]["status"]["state"] == "completed"
     assert parsed[-1]["result"]["final"] is True
-    assert parsed[-1]["result"]["status"]["message"]["parts"][0]["text"] == "streamed hello"

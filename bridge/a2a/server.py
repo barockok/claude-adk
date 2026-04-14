@@ -15,13 +15,15 @@ from bridge.a2a.models import (
     TaskState,
     TextPart,
 )
+from bridge.a2a.stream_adapter import claude_to_sse
 from bridge.a2a.task_manager import TaskManager, TaskNotFoundError
 from bridge.claude.runner import RunResult
 from bridge.config.settings import Settings
 
 
 class RunnerProtocol(Protocol):
-    async def run(self, prompt: str) -> RunResult: ...
+    async def run(self, prompt: str, context_id: str | None = None) -> RunResult: ...
+    async def stream(self, prompt: str, context_id: str | None = None) -> AsyncIterator: ...
 
 
 METHOD_NOT_FOUND = -32601
@@ -33,11 +35,6 @@ def _extract_prompt(params: dict) -> str:
     parts = message.get("parts") or []
     texts = [p.get("text", "") for p in parts if p.get("kind") == "text"]
     return "".join(texts)
-
-
-def _sse_frame(rpc_id, result: dict) -> str:
-    resp = JsonRpcResponse(id=rpc_id, result=result)
-    return f"data: {resp.model_dump_json(exclude_none=True)}\n\n"
 
 
 def build_router(
@@ -67,7 +64,7 @@ def build_router(
         tasks.update_status(task.id, TaskState.working)
 
         try:
-            result = await runner.run(prompt)
+            result = await runner.run(prompt, context_id=context_id)
         # A2A convention: runner failures surface as Task(status=failed) in `result`,
         # not as a JSON-RPC `error`. Clients can poll /tasks/{id} for the same shape.
         except Exception as exc:
@@ -85,61 +82,44 @@ def build_router(
         )
         return JsonRpcResponse(id=rpc_req.id, result=updated.model_dump())
 
-    async def _stream(rpc_req: JsonRpcRequest) -> AsyncIterator[str]:
+    async def _stream_via_adapter(rpc_req: JsonRpcRequest):
         prompt = _extract_prompt(rpc_req.params)
         context_id = rpc_req.params.get("contextId") or str(uuid.uuid4())
         task = tasks.create(context_id=context_id)
-
-        # Frame 1: initial Task object so the client knows the task id.
-        yield _sse_frame(rpc_req.id, task.model_dump())
-
-        # Frame 2: working status-update.
-        working = tasks.update_status(task.id, TaskState.working)
-        yield _sse_frame(rpc_req.id, {
-            "kind": "status-update",
-            "taskId": task.id,
-            "contextId": context_id,
-            "status": {"state": "working", "timestamp": working.status.timestamp},
-            "final": False,
-        })
+        tasks.update_status(task.id, TaskState.working)
 
         try:
-            result = await runner.run(prompt)
+            async def _claude_iter():
+                async for m in runner.stream(prompt, context_id=context_id):
+                    yield m
+
+            async for sse_chunk in claude_to_sse(
+                _claude_iter(), rpc_id=rpc_req.id, task_id=task.id, context_id=context_id,
+            ):
+                yield sse_chunk
         except Exception as exc:
             final = tasks.update_status(
-                task.id,
-                TaskState.failed,
+                task.id, TaskState.failed,
                 message=Message(role="agent", parts=[TextPart(text=f"Error: {exc}")]),
             )
-            yield _sse_frame(rpc_req.id, {
-                "kind": "status-update",
-                "taskId": task.id,
-                "contextId": context_id,
-                "status": {
-                    "state": "failed",
-                    "timestamp": final.status.timestamp,
-                    "message": final.status.message.model_dump() if final.status.message else None,
-                },
-                "final": True,
-            })
+            yield (
+                "data: "
+                + JsonRpcResponse(id=rpc_req.id, result={
+                    "kind": "status-update",
+                    "taskId": task.id,
+                    "contextId": context_id,
+                    "status": {
+                        "state": "failed",
+                        "timestamp": final.status.timestamp,
+                        "message": final.status.message.model_dump() if final.status.message else None,
+                    },
+                    "final": True,
+                }).model_dump_json(exclude_none=True)
+                + "\n\n"
+            )
             return
 
-        final = tasks.update_status(
-            task.id,
-            TaskState.completed,
-            message=Message(role="agent", parts=[TextPart(text=result.final_text)]),
-        )
-        yield _sse_frame(rpc_req.id, {
-            "kind": "status-update",
-            "taskId": task.id,
-            "contextId": context_id,
-            "status": {
-                "state": "completed",
-                "timestamp": final.status.timestamp,
-                "message": final.status.message.model_dump() if final.status.message else None,
-            },
-            "final": True,
-        })
+        tasks.update_status(task.id, TaskState.completed)
 
     @router.post("/")
     async def rpc(request: Request):
@@ -156,7 +136,10 @@ def build_router(
             return (await _run_sync(rpc_req)).model_dump(exclude_none=True)
 
         if rpc_req.method == "message/stream":
-            return StreamingResponse(_stream(rpc_req), media_type="text/event-stream")
+            return StreamingResponse(
+                _stream_via_adapter(rpc_req),
+                media_type="text/event-stream",
+            )
 
         return JsonRpcResponse(
             id=rpc_req.id,
