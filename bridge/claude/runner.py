@@ -1,5 +1,5 @@
 from dataclasses import dataclass, field
-from typing import Any
+from typing import Any, AsyncIterator
 
 from claude_agent_sdk import query
 
@@ -26,11 +26,20 @@ def _extract_assistant_text(message: Any) -> str:
 
 
 class ClaudeRunner:
-    def __init__(self, settings: Settings) -> None:
+    def __init__(self, settings: Settings, memory_mcp_server: Any | None = None) -> None:
         self._settings = settings
+        self._memory_mcp_server = memory_mcp_server
+        self._current_context_id: str | None = None
 
-    async def run(self, prompt: str) -> RunResult:
-        options = build_options(self._settings)
+    def current_context_id(self) -> str | None:
+        return self._current_context_id
+
+    def _build_options(self):
+        return build_options(self._settings, memory_mcp_server=self._memory_mcp_server)
+
+    async def run(self, prompt: str, context_id: str | None = None) -> RunResult:
+        self._current_context_id = context_id
+        options = self._build_options()
         collected: list[Any] = []
         result_text: str | None = None
         assistant_chunks: list[str] = []
@@ -47,3 +56,9 @@ class ClaudeRunner:
 
         final_text = result_text if result_text is not None else "".join(assistant_chunks)
         return RunResult(final_text=final_text, messages=collected)
+
+    async def stream(self, prompt: str, context_id: str | None = None) -> AsyncIterator[Any]:
+        self._current_context_id = context_id
+        options = self._build_options()
+        async for message in query(prompt=prompt, options=options):
+            yield message

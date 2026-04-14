@@ -70,3 +70,43 @@ async def test_runner_propagates_exceptions(monkeypatch):
     r = ClaudeRunner(Settings())
     with pytest.raises(RuntimeError, match="sdk failure"):
         await r.run("hi")
+
+
+@pytest.mark.asyncio
+async def test_runner_stream_yields_raw_messages(monkeypatch):
+    monkeypatch.setenv("ANTHROPIC_API_KEY", "sk")
+    monkeypatch.setenv("AGENT_NAME", "x")
+
+    msgs = [_FakeAssistantMessage("a "), _FakeAssistantMessage("b"), _FakeResultMessage("ab")]
+    monkeypatch.setattr(runner_mod, "query", _fake_query_factory(msgs))
+
+    r = ClaudeRunner(Settings())
+    collected = []
+    async for m in r.stream("hi", context_id="ctx-s"):
+        collected.append(m)
+
+    assert len(collected) == 3
+
+
+@pytest.mark.asyncio
+async def test_runner_exposes_current_context_id(monkeypatch):
+    monkeypatch.setenv("ANTHROPIC_API_KEY", "sk")
+    monkeypatch.setenv("AGENT_NAME", "x")
+
+    observed: list[str | None] = []
+    r_holder: dict = {}
+
+    async def _query(*, prompt, options):
+        observed.append(r_holder["r"].current_context_id())
+        if False:
+            yield  # make it a generator
+        return
+
+    monkeypatch.setattr(runner_mod, "query", _query)
+
+    r = ClaudeRunner(Settings())
+    r_holder["r"] = r
+    async for _ in r.stream("hi", context_id="ctx-9"):
+        pass
+
+    assert observed == ["ctx-9"]
