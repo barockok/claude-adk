@@ -25,7 +25,6 @@ class RunnerProtocol(Protocol):
 
 METHOD_NOT_FOUND = -32601
 INVALID_PARAMS = -32602
-INTERNAL_ERROR = -32603
 
 
 def _extract_prompt(params: dict) -> str:
@@ -79,8 +78,12 @@ def build_router(
         context_id = rpc_req.params.get("contextId") or str(uuid.uuid4())
         task = tasks.create(context_id=context_id)
 
+        tasks.update_status(task.id, TaskState.working)
+
         try:
             result = await runner.run(prompt)
+        # A2A convention: runner failures surface as Task(status=failed) in `result`,
+        # not as a JSON-RPC `error`. Clients can poll /tasks/{id} for the same shape.
         except Exception as exc:
             updated = tasks.update_status(
                 task.id,

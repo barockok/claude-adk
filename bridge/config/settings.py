@@ -11,10 +11,6 @@ from pydantic.fields import FieldInfo
 class _CsvAwareEnvSource(EnvSettingsSource):
     _CSV_FIELDS = {"agent_allowed_tools"}
 
-    def field_is_complex(self, field: FieldInfo) -> bool:
-        # Let the parent decide, but we'll override at prepare_field_value level
-        return super().field_is_complex(field)
-
     def prepare_field_value(
         self, field_name: str, field: FieldInfo, value: Any, value_is_complex: bool
     ) -> Any:

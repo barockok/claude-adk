@@ -1,5 +1,6 @@
 import json
 import pytest
+from pydantic import ValidationError
 from bridge.config.settings import Settings
 
 
@@ -44,5 +45,5 @@ def test_settings_mcp_servers_parses_json(monkeypatch):
 def test_settings_missing_required_raises(monkeypatch):
     monkeypatch.delenv("ANTHROPIC_API_KEY", raising=False)
     monkeypatch.delenv("AGENT_NAME", raising=False)
-    with pytest.raises(Exception):
+    with pytest.raises(ValidationError):
         Settings()
