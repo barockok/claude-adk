@@ -1,0 +1,848 @@
+- generic [active] [ref=e1]:
+  - generic:
+    - generic:
+      - link "Skip to main content" [ref=e2] [cursor=pointer]
+      - link "Accessibility help" [ref=e3] [cursor=pointer]:
+        - /url: https://support.google.com/websearch/answer/181196?hl=en-ID
+      - link "Accessibility feedback" [ref=e4] [cursor=pointer]
+  - generic [ref=e9]:
+    - search [ref=e10]:
+      - generic [ref=e12]:
+        - link "Go to Google Home" [ref=e14] [cursor=pointer]:
+          - /url: https://www.google.com/webhp?hl=en&sa=X&ved=0ahUKEwjzxu6Wgu2TAxWh8ckDHYY_CT0QPAgJ
+          - img [ref=e15]
+        - generic [ref=e22]:
+          - generic [ref=e23]:
+            - combobox "Search" [ref=e26]: cheapest milford sound day tour from queenstown cheapest milford sound day tour from queenstown
+            - generic [ref=e27]:
+              - button "Clear" [ref=e29] [cursor=pointer]:
+                - img [ref=e31]
+              - generic [ref=e34]:
+                - button "Search by voice" [ref=e35] [cursor=pointer]:
+                  - img [ref=e36]
+                - button "Search by image" [ref=e38] [cursor=pointer]:
+                  - img [ref=e39]
+          - button "Search" [ref=e41] [cursor=pointer]:
+            - img [ref=e44]
+    - generic [ref=e47]:
+      - button "Google apps" [ref=e49] [cursor=pointer]:
+        - img [ref=e50]
+      - 'button "Google Account: Zidni Mubarok (zidni.mubarok@amartha.com)" [ref=e54] [cursor=pointer]':
+        - img [ref=e55]
+  - generic [ref=e57]:
+    - navigation [ref=e63]:
+      - generic [ref=e69]:
+        - list [ref=e70]:
+          - listitem [ref=e71]:
+            - link "AI Mode" [ref=e74] [cursor=pointer]:
+              - /url: /search?q=cheapest+milford+sound+day+tour+from+queenstown&sca_esv=829b6725c1213f11&sxsrf=ANbL-n7S7-h1ysp49SlJL9D2UFzYVqc5Ig:1776158540282&udm=50&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpV6Bbbmx4QVaoKkiRQ2jlwvMg54BMciw6zYi-UcSdrQA6qGJdCLcK5JzcMkbtdHcTj5LE3pjCCyU298Ygrnfs8gJ6ZO2WKO8HF_Ci-fOXTIgTEIspQZG-kkzlZqYijIMf6Bj2nIa1YWZR7ltEDbNvliOiMwxTpKndzVRKCQKxkt1dOZat2IWBGqogu0S9y6sxank4wg&aep=1&ntc=1&sa=X&ved=2ahUKEwjzxu6Wgu2TAxWh8ckDHYY_CT0Q2J8OegQIDRAI
+              - generic [ref=e77]: AI Mode
+          - listitem [ref=e78]:
+            - link "All" [disabled] [ref=e79]:
+              - generic [ref=e81]: All
+          - listitem [ref=e82]:
+            - link "Short videos" [ref=e83] [cursor=pointer]:
+              - /url: /search?sca_esv=829b6725c1213f11&sxsrf=ANbL-n7S7-h1ysp49SlJL9D2UFzYVqc5Ig:1776158540282&udm=39&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpV6Bbbmx4QVaoKkiRQ2jlwvMg54BMciw6zYi-UcSdrQA6qGJdCLcK5JzcMkbtdHcTj5LE3pjCCyU298Ygrnfs8gJ6ZO2WKO8HF_Ci-fOXTIgTEIspQZG-kkzlZqYijIMf6Bj2nIa1YWZR7ltEDbNvliOiMwxTpKndzVRKCQKxkt1dOZat2IWBGqogu0S9y6sxank4wg&q=cheapest+milford+sound+day+tour+from+queenstown&sa=X&ved=2ahUKEwjzxu6Wgu2TAxWh8ckDHYY_CT0Qs6gLegQIKBAB
+              - generic [ref=e85]: Short videos
+          - listitem [ref=e86]:
+            - link "Images" [ref=e87] [cursor=pointer]:
+              - /url: /search?sca_esv=829b6725c1213f11&sxsrf=ANbL-n7S7-h1ysp49SlJL9D2UFzYVqc5Ig:1776158540282&udm=2&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpV6Bbbmx4QVaoKkiRQ2jlwvMg54BMciw6zYi-UcSdrQA6qGJdCLcK5JzcMkbtdHcTj5LE3pjCCyU298Ygrnfs8gJ6ZO2WKO8HF_Ci-fOXTIgTEIspQZG-kkzlZqYijIMf6Bj2nIa1YWZR7ltEDbNvliOiMwxTpKndzVRKCQKxkt1dOZat2IWBGqogu0S9y6sxank4wg&q=cheapest+milford+sound+day+tour+from+queenstown&sa=X&ved=2ahUKEwjzxu6Wgu2TAxWh8ckDHYY_CT0QtKgLegQIIxAB
+              - generic [ref=e89]: Images
+          - listitem [ref=e90]:
+            - link "Videos" [ref=e91] [cursor=pointer]:
+              - /url: /search?sca_esv=829b6725c1213f11&sxsrf=ANbL-n7S7-h1ysp49SlJL9D2UFzYVqc5Ig:1776158540282&udm=7&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpV6Bbbmx4QVaoKkiRQ2jlwvMg54BMciw6zYi-UcSdrQA6qGJdCLcK5JzcMkbtdHcTj5LE3pjCCyU298Ygrnfs8gJ6ZO2WKO8HF_Ci-fOXTIgTEIspQZG-kkzlZqYijIMf6Bj2nIa1YWZR7ltEDbNvliOiMwxTpKndzVRKCQKxkt1dOZat2IWBGqogu0S9y6sxank4wg&q=cheapest+milford+sound+day+tour+from+queenstown&sa=X&ved=2ahUKEwjzxu6Wgu2TAxWh8ckDHYY_CT0QtKgLegQIHhAB
+              - generic [ref=e93]: Videos
+          - listitem [ref=e94]:
+            - link "News" [ref=e95] [cursor=pointer]:
+              - /url: /search?sca_esv=829b6725c1213f11&sxsrf=ANbL-n7S7-h1ysp49SlJL9D2UFzYVqc5Ig:1776158540282&q=cheapest+milford+sound+day+tour+from+queenstown&tbm=nws&source=lnms&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpV6Bbbmx4QVaoKkiRQ2jlwvMg54BMciw6zYi-UcSdrQA6qGJdCLcK5JzcMkbtdHcTj5LE3pjCCyU298Ygrnfs8gJ6ZO2WKO8HF_Ci-fOXTIgTEIspQZG-kkzlZqYijIMf6Bj2nIa1YWZR7ltEDbNvliOiMwxTpKndzVRKCQKxkt1dOZat2IWBGqogu0S9y6sxank4wg&sa=X&ved=2ahUKEwjzxu6Wgu2TAxWh8ckDHYY_CT0Q0pQJegQIGBAB
+              - generic [ref=e97]: News
+          - listitem [ref=e98]:
+            - link "Forums" [ref=e99] [cursor=pointer]:
+              - /url: /search?sca_esv=829b6725c1213f11&sxsrf=ANbL-n7S7-h1ysp49SlJL9D2UFzYVqc5Ig:1776158540282&udm=18&fbs=ADc_l-aN0CWEZBOHjofHoaMMDiKpV6Bbbmx4QVaoKkiRQ2jlwvMg54BMciw6zYi-UcSdrQA6qGJdCLcK5JzcMkbtdHcTj5LE3pjCCyU298Ygrnfs8gJ6ZO2WKO8HF_Ci-fOXTIgTEIspQZG-kkzlZqYijIMf6Bj2nIa1YWZR7ltEDbNvliOiMwxTpKndzVRKCQKxkt1dOZat2IWBGqogu0S9y6sxank4wg&q=cheapest+milford+sound+day+tour+from+queenstown&sa=X&ved=2ahUKEwjzxu6Wgu2TAxWh8ckDHYY_CT0Qs6gLegQIFhAB
+              - generic [ref=e101]: Forums
+          - listitem [ref=e102]:
+            - button "More filters" [ref=e103] [cursor=pointer]:
+              - generic "More filters" [ref=e104]:
+                - generic [ref=e105]:
+                  - generic [ref=e106]: More
+                  - img [ref=e108]
+        - button "Tools" [ref=e111] [cursor=pointer]:
+          - generic [ref=e113]:
+            - generic [ref=e114]: Tools
+            - img [ref=e116]
+    - heading "Search Results" [level=1] [ref=e118]
+    - generic [ref=e123]:
+      - generic [ref=e124]:
+        - region "Ads" [ref=e129]:
+          - generic [ref=e130]:
+            - heading "Sponsored results" [level=2] [ref=e136]
+            - generic [ref=e137]:
+              - generic [ref=e143]:
+                - generic [ref=e149]:
+                  - generic [ref=e150]:
+                    - link "Milford Sound Piopiotahi Day Trip - Klook-Up To 60% Off Activities klook.com https://www.klook.com" [ref=e151] [cursor=pointer]:
+                      - /url: https://www.klook.com/en-US/destination/p50291062-milford-sound-piopiotahi/5-tour/
+                      - heading "Milford Sound Piopiotahi Day Trip - Klook-Up To 60% Off Activities" [level=3] [ref=e152]
+                      - generic [ref=e158]:
+                        - generic [ref=e160]: klook.com
+                        - generic [ref=e161]: https://www.klook.com
+                    - button "Why this ad?" [ref=e164] [cursor=pointer]:
+                      - img [ref=e166]
+                  - generic [ref=e170]: Explore Milford Sound Piopiotahi Day Trip With Klook! Real Reviews. Instant Confirmation with Flexible Cancellation Option. Up to 60% off.
+                  - generic [ref=e172]:
+                    - text: ‎
+                    - link "Deals of the Day from Klook" [ref=e173] [cursor=pointer]:
+                      - /url: /aclk?sa=L&pf=1&ai=DChsSEwj-k_aWgu2TAxXySn8AHUQELdkYACICCAEQDRoCb2E&co=1&ase=2&gclid=Cj0KCQjwy_fOBhC6ARIsAHKFB79v6gmmSOzfKrFw9dkbkMw26qgW1dyFdFSYaWtEdncN0CeLWEaX8UkaAvfXEALw_wcB&cid=CAASWuRoTPfXE5Mdr3LdiycmfebJK_xUhX5_Zu03Qa3ReS132uQKQyTuRknKEu2exzb89rngDp7PqJIoHHpbExUNo4amdr0stpeKTSFIM9UY1-K6Ieb1Dm2Eg1G9Zg&cce=2&category=acrcp_v1_32&sig=AOD64_2Ig3IqdJRdu_IH9avDt5xdDk6iaw&adurl=https://www.klook.com/en-US/destination/p50291062-milford-sound-piopiotahi/5-tour/%3F_currency%3DIDR%26campaignid%3D22911712991%26adgroupid%3D186795984689%26targetid%3Dkwd-2442213751160%26matchtype%3Db%26device%3Dc%26creative%3D770077356955%26extensionid%3D%26keyword%3Dmilford%2520sound%2520piopiotahi%2520day%2520trip%26loc_interest_ms%3D%26loc_physical_ms%3D9120519%26network%3Dg%26utm_content%3Dcampaignid_22911712991_adgroupid_186795984689%26gad_source%3D1%26gad_campaignid%3D22911712991%26gbraid%3D0AAAAACa_CWygdBfQV2dNI5fzqlCEEtEfw%26gclid%3DCj0KCQjwy_fOBhC6ARIsAHKFB79v6gmmSOzfKrFw9dkbkMw26qgW1dyFdFSYaWtEdncN0CeLWEaX8UkaAvfXEALw_wcB&q=
+                    - text: · ‎
+                    - link "No Fee & Earn Credits" [ref=e174] [cursor=pointer]:
+                      - /url: /aclk?sa=L&pf=1&ai=DChsSEwj-k_aWgu2TAxXySn8AHUQELdkYACICCAEQEBoCb2E&co=1&ase=2&gclid=Cj0KCQjwy_fOBhC6ARIsAHKFB7-OijN2P0ooWP4IkZwv-zdEV3RjQekCTPxVjU_QKE5-iR6E_UcbeJ8aAn9eEALw_wcB&cid=CAASWuRoTPfXE5Mdr3LdiycmfebJK_xUhX5_Zu03Qa3ReS132uQKQyTuRknKEu2exzb89rngDp7PqJIoHHpbExUNo4amdr0stpeKTSFIM9UY1-K6Ieb1Dm2Eg1G9Zg&cce=2&category=acrcp_v1_32&sig=AOD64_3sRVsYWShuDZOF8ZiVahm-5-O5qw&adurl=https://www.klook.com/en-US/destination/p50291062-milford-sound-piopiotahi/5-tour/%3F_currency%3DIDR%26campaignid%3D22911712991%26adgroupid%3D186795984689%26targetid%3Dkwd-2442213751160%26matchtype%3Db%26device%3Dc%26creative%3D770077356955%26extensionid%3D%26keyword%3Dmilford%2520sound%2520piopiotahi%2520day%2520trip%26loc_interest_ms%3D%26loc_physical_ms%3D9120519%26network%3Dg%26utm_content%3Dcampaignid_22911712991_adgroupid_186795984689%26gad_source%3D1%26gad_campaignid%3D22911712991%26gbraid%3D0AAAAACa_CWygdBfQV2dNI5fzqlCEEtEfw%26gclid%3DCj0KCQjwy_fOBhC6ARIsAHKFB7-OijN2P0ooWP4IkZwv-zdEV3RjQekCTPxVjU_QKE5-iR6E_UcbeJ8aAn9eEALw_wcB&q=
+                    - text: · ‎
+                    - link "Private Airport Transfers" [ref=e175] [cursor=pointer]:
+                      - /url: https://www.klook.com/en-US/airport-transfers/?_currency=IDR
+                    - text: · ‎
+                    - link "Visit Top Attractions" [ref=e176] [cursor=pointer]:
+                      - /url: https://www.klook.com/en-US/attractions/?_currency=IDR
+                  - generic [ref=e181]: 1M+ visits in past month
+                - generic [ref=e187]:
+                  - link "Image from getyourguide.com" [ref=e189] [cursor=pointer]:
+                    - /url: https://www.google.com/aclk?sa=L&pf=1&ai=DChsSEwj-k_aWgu2TAxXySn8AHUQELdkYACICCAEQDBoCb2E&co=1&ase=2&gclid=Cj0KCQjwy_fOBhC6ARIsAHKFB7-BW2v6zt3qirsCpkPxQ58ceoZg-t5XfgkKh-yQL7JP9rgLKrHiwfcaAtAhEALw_wcB&cid=CAASWuRoTPfXE5Mdr3LdiycmfebJK_xUhX5_Zu03Qa3ReS132uQKQyTuRknKEu2exzb89rngDp7PqJIoHHpbExUNo4amdr0stpeKTSFIM9UY1-K6Ieb1Dm2Eg1G9Zg&cce=2&category=acrcp_v1_32&sig=AOD64_1ZOzwpbps-uE5KTk6JBxefnyB60A&q=&nis=4&ved=2ahUKEwjzxu6Wgu2TAxWh8ckDHYY_CT0Qh78CegQIERAB&adurl=https://www.getyourguide.com/-l498/-tc360/-tl4468/%3Fcmp%3Dga%26campaign_id%3D6656466896%26adgroup_id%3D145966664317%26target_id%3Dkwd-317706487638%26loc_physical_ms%3D9120519%26match_type%3Db%26ad_id%3D647718891756%26keyword%3Dqueenstown%2520milford%2520sound%2520tours%26ad_position%3D%26feed_item_id%3D%26placement%3D%26device%3Dc%26assetgroup_id%3D%26synthetic_keyword%3Dmilford%2520sound%2520day%2520tour%26partner_id%3DCD951%26gad_source%3D1%26gad_campaignid%3D6656466896%26gbraid%3D0AAAAADmzJCNYVLBqW1Qk-yzHyNP_LNIkU%26gclid%3DCj0KCQjwy_fOBhC6ARIsAHKFB7-BW2v6zt3qirsCpkPxQ58ceoZg-t5XfgkKh-yQL7JP9rgLKrHiwfcaAtAhEALw_wcB
+                    - img "Image from getyourguide.com" [ref=e191]
+                  - generic [ref=e192]:
+                    - link "Book Full & Half Day Tours - Queenstown to Milford Sound GetYourGuide https://www.getyourguide.com › queenstown › tour" [ref=e193] [cursor=pointer]:
+                      - /url: https://www.getyourguide.com/queenstown-l498/day-trips-tc360/milford-sound-tl4468/
+                      - heading "Book Full & Half Day Tours - Queenstown to Milford Sound" [level=3] [ref=e195]
+                      - generic [ref=e201]:
+                        - generic [ref=e203]: GetYourGuide
+                        - generic [ref=e204]: https://www.getyourguide.com › queenstown › tour
+                    - button "Why this ad?" [ref=e207] [cursor=pointer]:
+                      - img [ref=e209]
+                  - generic [ref=e213]: Best price and money back guarantee! Read the reviews of your fellow travelers. Planning on the go is easy with 24/7 customer service support and flexible cancellation. Best value guarantee.
+                  - generic [ref=e215]:
+                    - text: ‎
+                    - link "Milford Sound Tours" [ref=e216] [cursor=pointer]:
+                      - /url: /aclk?sa=L&pf=1&ai=DChsSEwj-k_aWgu2TAxXySn8AHUQELdkYACICCAEQDhoCb2E&co=1&ase=2&gclid=Cj0KCQjwy_fOBhC6ARIsAHKFB7-S5lUFTkRalGJOknw5J1jUukeCDZCHsGDUEc6ZBzVorSzorgY7V08aAnHUEALw_wcB&cid=CAASWuRoTPfXE5Mdr3LdiycmfebJK_xUhX5_Zu03Qa3ReS132uQKQyTuRknKEu2exzb89rngDp7PqJIoHHpbExUNo4amdr0stpeKTSFIM9UY1-K6Ieb1Dm2Eg1G9Zg&cce=2&category=acrcp_v1_32&sig=AOD64_0G4tcdUV66_MjWoWdbziq6R_Cv2A&adurl=https://www.getyourguide.com/-l498/-tc360/-tl4468/%3Fcmp%3Dga%26campaign_id%3D6656466896%26adgroup_id%3D145966664317%26target_id%3Dkwd-317706487638%26loc_physical_ms%3D9120519%26match_type%3Db%26ad_id%3D647718891756%26keyword%3Dqueenstown%2520milford%2520sound%2520tours%26ad_position%3D%26feed_item_id%3D%26placement%3D%26device%3Dc%26assetgroup_id%3D%26synthetic_keyword%3Dmilford%2520sound%2520day%2520tour%26partner_id%3DCD951%26gad_source%3D1%26gad_campaignid%3D6656466896%26gbraid%3D0AAAAADmzJCNYVLBqW1Qk-yzHyNP_LNIkU%26gclid%3DCj0KCQjwy_fOBhC6ARIsAHKFB7-S5lUFTkRalGJOknw5J1jUukeCDZCHsGDUEc6ZBzVorSzorgY7V08aAnHUEALw_wcB&q=
+                    - text: · ‎
+                    - link "Book Last-Minute Experiences" [ref=e217] [cursor=pointer]:
+                      - /url: /aclk?sa=L&pf=1&ai=DChsSEwj-k_aWgu2TAxXySn8AHUQELdkYACICCAEQERoCb2E&co=1&ase=2&gclid=Cj0KCQjwy_fOBhC6ARIsAHKFB78dM7uCYTLHvu3jw9qDGBrzmBgGEIIXBu0_jUwKcNo3Cv3sywTYQxwaAhTmEALw_wcB&cid=CAASWuRoTPfXE5Mdr3LdiycmfebJK_xUhX5_Zu03Qa3ReS132uQKQyTuRknKEu2exzb89rngDp7PqJIoHHpbExUNo4amdr0stpeKTSFIM9UY1-K6Ieb1Dm2Eg1G9Zg&cce=2&category=acrcp_v1_32&sig=AOD64_3RnSOHjGFQ-wUNr8zbbbQSKwhTdw&adurl=https://www.getyourguide.com/-l498/-tc360/-tl4468/%3Fcmp%3Dga%26campaign_id%3D6656466896%26adgroup_id%3D145966664317%26target_id%3Dkwd-317706487638%26loc_physical_ms%3D9120519%26match_type%3Db%26ad_id%3D647718891756%26keyword%3Dqueenstown%2520milford%2520sound%2520tours%26ad_position%3D%26feed_item_id%3D%26placement%3D%26device%3Dc%26assetgroup_id%3D%26synthetic_keyword%3Dmilford%2520sound%2520day%2520tour%26partner_id%3DCD951%26gad_source%3D1%26gad_campaignid%3D6656466896%26gbraid%3D0AAAAADmzJCNYVLBqW1Qk-yzHyNP_LNIkU%26gclid%3DCj0KCQjwy_fOBhC6ARIsAHKFB78dM7uCYTLHvu3jw9qDGBrzmBgGEIIXBu0_jUwKcNo3Cv3sywTYQxwaAhTmEALw_wcB&q=
+                    - text: · ‎
+                    - link "Tickets" [ref=e218] [cursor=pointer]:
+                      - /url: https://www.getyourguide.com/-l498/-tc123/?cmp=ga
+                    - text: · ‎
+                    - link "Queenstown Day Trips" [ref=e219] [cursor=pointer]:
+                      - /url: https://www.getyourguide.com/-l498/-tc360/?cmp=ga
+                - generic [ref=e225]:
+                  - generic [ref=e226]:
+                    - link "One-Day Queenstown Tours - Queenstown To Milford Sound Viator https://www.viator.com › queenstown › book-now" [ref=e227] [cursor=pointer]:
+                      - /url: https://www.viator.com/Queenstown-tourism/d407-r20094936971-s227063651
+                      - heading "One-Day Queenstown Tours - Queenstown To Milford Sound" [level=3] [ref=e228]
+                      - generic [ref=e234]:
+                        - generic [ref=e236]: Viator
+                        - generic [ref=e237]: https://www.viator.com › queenstown › book-now
+                    - button "Why this ad?" [ref=e240] [cursor=pointer]:
+                      - img [ref=e242]
+                  - generic [ref=e246]: Explore Queenstown Day Trips With Easy Booking And 24/7 Customer Support. Discover Exciting...
+                  - generic [ref=e248]:
+                    - img "Rated4.7out of5" [ref=e250]
+                    - generic [ref=e252]:
+                      - link "Rating" [ref=e253] [cursor=pointer]:
+                        - /url: https://www.google.com/shopping/ratings/account/metrics?q=viator.com&c=ID&v=19
+                      - text: "for viator.com: 4,7 - 493 reviews"
+                  - generic [ref=e255]:
+                    - text: ‎
+                    - link "Day Trips From Queenstown" [ref=e256] [cursor=pointer]:
+                      - /url: /aclk?sa=L&ai=DChsSEwj-k_aWgu2TAxXySn8AHUQELdkYACICCAEQDxoCb2E&ae=2&co=1&ase=2&gclid=Cj0KCQjwy_fOBhC6ARIsAHKFB7-zumHM-2gxwpKPvyPvmeGsNqrtrz4djfzO4U_cJw1tkewcKvjS0ZMaAscsEALw_wcB&cid=CAASWuRoTPfXE5Mdr3LdiycmfebJK_xUhX5_Zu03Qa3ReS132uQKQyTuRknKEu2exzb89rngDp7PqJIoHHpbExUNo4amdr0stpeKTSFIM9UY1-K6Ieb1Dm2Eg1G9Zg&cce=2&category=acrcp_v1_71&sig=AOD64_0tWbDxih8Tersx7-0dIEjgYVTflQ&adurl=&q=
+                    - text: · ‎
+                    - link "Queenstown Excursions" [ref=e257] [cursor=pointer]:
+                      - /url: /aclk?sa=L&ai=DChsSEwj-k_aWgu2TAxXySn8AHUQELdkYACICCAEQEhoCb2E&ae=2&co=1&ase=2&gclid=Cj0KCQjwy_fOBhC6ARIsAHKFB78ZXHgqXY2MDSc0uK653PVaNbrp_OIzRvCZTC6rVWSgY4S2524mly0aAqdBEALw_wcB&cid=CAASWuRoTPfXE5Mdr3LdiycmfebJK_xUhX5_Zu03Qa3ReS132uQKQyTuRknKEu2exzb89rngDp7PqJIoHHpbExUNo4amdr0stpeKTSFIM9UY1-K6Ieb1Dm2Eg1G9Zg&cce=2&category=acrcp_v1_71&sig=AOD64_0mHVPWg4IoVAPM-N8TATVKiwkfmA&adurl=&q=
+                    - text: · ‎
+                    - link "Reserve Now & Pay Later" [ref=e258] [cursor=pointer]:
+                      - /url: https://www.viator.com/support/reserveNowPayLater?ALSLE6
+                - generic [ref=e264]:
+                  - generic [ref=e265]:
+                    - link "Tours Starting From NZ$125 - Milford Sound From Queenstown Milford Sound Cruises https://www.milford-sound-cruises.co.nz › queenstown" [ref=e266] [cursor=pointer]:
+                      - /url: https://www.milford-sound-cruises.co.nz/queenstown-to-milford-sound-tours/
+                      - heading "Tours Starting From NZ$125 - Milford Sound From Queenstown" [level=3] [ref=e267]
+                      - generic [ref=e273]:
+                        - generic [ref=e275]: Milford Sound Cruises
+                        - generic [ref=e276]: https://www.milford-sound-cruises.co.nz › queenstown
+                    - button "Why this ad?" [ref=e279] [cursor=pointer]:
+                      - img [ref=e281]
+                  - generic [ref=e285]: Free cancelation & full refund available with 24/7 customer service. Book your tickets now. Top-rated sightseeing cruises, expert guided tours & multiple...
+                  - generic [ref=e287]:
+                    - text: ‎
+                    - link "Milford Sound Day Tours" [ref=e288] [cursor=pointer]:
+                      - /url: /aclk?sa=L&ai=DChsSEwj-k_aWgu2TAxXySn8AHUQELdkYACICCAEQBxoCb2E&co=1&ase=2&gclid=Cj0KCQjwy_fOBhC6ARIsAHKFB798ksLir2RmHTe7uHQ-f9yhgh2Jks5qi6boGg54c47WVs7FAUl4tEEaAvwkEALw_wcB&cid=CAASWuRoTPfXE5Mdr3LdiycmfebJK_xUhX5_Zu03Qa3ReS132uQKQyTuRknKEu2exzb89rngDp7PqJIoHHpbExUNo4amdr0stpeKTSFIM9UY1-K6Ieb1Dm2Eg1G9Zg&cce=2&category=acrcp_v1_32&sig=AOD64_1QQD2wCvZ21KFW7wKCr1tWGkEwZA&adurl=&q=
+                    - text: · ‎
+                    - link "Best Prices on Milford Sound Tours" [ref=e289] [cursor=pointer]:
+                      - /url: /aclk?sa=L&ai=DChsSEwj-k_aWgu2TAxXySn8AHUQELdkYACICCAEQCRoCb2E&co=1&ase=2&gclid=Cj0KCQjwy_fOBhC6ARIsAHKFB79-cqi6WOCI3auynR8lWiUiexq03cszGz71vZhJmSsVZSkULja21_QaAoOiEALw_wcB&cid=CAASWuRoTPfXE5Mdr3LdiycmfebJK_xUhX5_Zu03Qa3ReS132uQKQyTuRknKEu2exzb89rngDp7PqJIoHHpbExUNo4amdr0stpeKTSFIM9UY1-K6Ieb1Dm2Eg1G9Zg&cce=2&category=acrcp_v1_32&sig=AOD64_1OSBHCm35E57oeHIjrpAq1WP1uxw&adurl=&q=
+                    - text: · ‎
+                    - link "Top-Rated Tours" [ref=e290] [cursor=pointer]:
+                      - /url: https://milford-sound-cruises.co.nz/
+              - button "Hide sponsored results" [ref=e291] [cursor=pointer]:
+                - separator [ref=e292]
+                - generic [ref=e293]:
+                  - generic [ref=e294]: Hide sponsored results
+                  - img [ref=e296]
+        - generic [ref=e312]:
+          - generic [ref=e318]:
+            - generic [ref=e320]:
+              - generic [ref=e321]:
+                - img [ref=e322]
+                - heading "AI Overview" [level=2] [ref=e324]
+              - button "Change language to Hindi" [ref=e327] [cursor=pointer]:
+                - generic [ref=e329]: Indonesia
+              - button "About this result" [ref=e333]:
+                - img [ref=e335]
+            - generic [ref=e359]:
+              - generic [ref=e362]:
+                - generic [ref=e363]:
+                  - text: The cheapest Milford Sound day tours from Queenstown generally start around
+                  - mark [ref=e364]:
+                    - strong [ref=e365]: NZD $200–$250 per adult
+                  - text: ", with prices often falling lower on booking platforms. Top budget-friendly options include large coach-and-cruise packages, often found on"
+                  - link "undefined" [ref=e367] [cursor=pointer]:
+                    - /url: https://www.bookme.co.nz/things-to-do/queenstown/rock_peak/activities/attractions/milford-sound
+                    - text: Bookme New Zealand
+                  - text: .
+                  - button "View related links" [ref=e370] [cursor=pointer]:
+                    - img [ref=e372]
+                - strong [ref=e375]: "Cheapest Tour Options:"
+                - list [ref=e376]:
+                  - listitem [ref=e377]:
+                    - generic [ref=e378]:
+                      - strong [ref=e379]: "Coach & Cruise Packages:"
+                      - text: Often the most cost-effective, with prices ranging from roughly $219 to $240+ per person.
+                  - listitem [ref=e380]:
+                    - generic [ref=e381]:
+                      - strong [ref=e382]: "Best Discount Platforms:"
+                      - text: Check
+                      - strong [ref=e383]:
+                        - generic [ref=e384]: Bookme New Zealand
+                      - text: and
+                      - strong [ref=e385]:
+                        - link [ref=e387] [cursor=pointer]:
+                          - /url: https://www.klook.com/experiences/list/milford-sound-tours/c702215-cate9/
+                          - text: Klook Travel
+                      - text: for deals, which often feature 20-60% off for
+                      - generic [ref=e388]: Pure Milford
+                      - text: or other operators.
+                  - listitem [ref=e389]:
+                    - generic [ref=e390]:
+                      - strong [ref=e391]: "Large Group Tours:"
+                      - text: Larger buses tend to be cheaper than smaller group luxury options.
+                    - button [ref=e394] [cursor=pointer]:
+                      - generic [ref=e395]:
+                        - img [ref=e396]
+                        - generic [ref=e397]:
+                          - generic [ref=e398]: YouTube
+                          - generic [ref=e399]: "+4"
+                - strong [ref=e401]: "Key Considerations:"
+                - list [ref=e402]:
+                  - listitem [ref=e403]:
+                    - generic [ref=e404]:
+                      - strong [ref=e405]: "Departure Time:"
+                      - text: Earlier departures (around 6:30 AM–7:00 AM) are standard.
+                  - listitem [ref=e406]:
+                    - generic [ref=e407]:
+                      - strong [ref=e408]: "Includes:"
+                      - text: Most tours include return transport from Queenstown, a cruise, and optional lunch (usually extra).
+                  - listitem [ref=e409]:
+                    - generic [ref=e410]:
+                      - strong [ref=e411]: "Alternative:"
+                      - text: Taking a bus from Te Anau is cheaper (~$163+) but requires getting to Te Anau first.
+                    - button [ref=e414] [cursor=pointer]:
+                      - generic [ref=e415]:
+                        - img [ref=e416]
+                        - generic [ref=e417]:
+                          - generic [ref=e418]: Milford Sound
+                          - generic [ref=e419]: "+4"
+                - generic [ref=e420]:
+                  - emphasis [ref=e421]: Prices are subject to change and demand, particularly during peak seasons.
+                  - button [ref=e424] [cursor=pointer]:
+                    - generic [ref=e425]:
+                      - img [ref=e426]
+                      - generic [ref=e427]:
+                        - generic [ref=e428]: YouTube
+                        - generic [ref=e429]: "+2"
+              - generic [ref=e436]:
+                - list [ref=e438]:
+                  - listitem [ref=e439]:
+                    - generic [ref=e440]:
+                      - link "How much does a Milford Sound day tour cost? (Full pricing .... Opens in new tab." [ref=e441] [cursor=pointer]:
+                        - /url: https://www.youtube.com/watch?v=Hpaq8zG2Nns
+                      - generic [ref=e442]:
+                        - generic [ref=e443]:
+                          - generic [ref=e444]: How much does a Milford Sound day tour cost? (Full pricing ...
+                          - generic [ref=e445]: 17 Nov 2025 — planning a trip to Milford Sound. and trying to decide which tour is right for you the prices of a Milford Sound tour can vary gre...
+                          - generic [ref=e446]:
+                            - generic [ref=e453]:
+                              - generic [ref=e454]: YouTube
+                              - generic [ref=e455]: ·
+                              - generic [ref=e456]: Luxe Tours
+                            - button "About this result" [ref=e458] [cursor=pointer]:
+                              - img [ref=e459]
+                        - button "undefined" [ref=e463] [cursor=pointer]:
+                          - generic [ref=e464]: 5:56
+                          - img [ref=e467]
+                          - img [ref=e471]
+                  - listitem [ref=e474]:
+                    - generic [ref=e475]:
+                      - link "Milford Sound Cruise from Queenstown- day trip highlights. Opens in new tab." [ref=e476] [cursor=pointer]:
+                        - /url: https://www.youtube.com/watch?v=9IGTpT8i5Qc#:~:text=welcome%20to%20our%20adventure%20in%20New%20Zealand,the%20road%20keep%20us%20Awake%20and%20captivated.
+                      - generic [ref=e477]:
+                        - generic [ref=e478]:
+                          - generic [ref=e479]: Milford Sound Cruise from Queenstown- day trip highlights
+                          - generic [ref=e480]: 12 Jun 2023 — welcome to our adventure in New Zealand South Island where we embark on an exhilarating journey to the renowned Mu for join us as ...
+                          - generic [ref=e481]:
+                            - generic [ref=e488]:
+                              - generic [ref=e489]: YouTube
+                              - generic [ref=e490]: ·
+                              - generic [ref=e491]: Travel with Lens
+                            - button [ref=e493] [cursor=pointer]:
+                              - img [ref=e494]
+                        - button "undefined" [ref=e498] [cursor=pointer]:
+                          - generic [ref=e499]: 11:52
+                          - img [ref=e502]
+                          - img [ref=e506]
+                  - listitem [ref=e509]:
+                    - generic [ref=e510]:
+                      - link [ref=e511] [cursor=pointer]:
+                        - /url: https://www.milford-sound.co.nz/travel-itineraries/budget-itinerary/#:~:text=Depart%20Te%20Anau,678
+                      - generic [ref=e513]:
+                        - generic [ref=e514]: Budget Itinerary - Milford Sound
+                        - generic [ref=e515]: "Depart Te Anau. • Return day trip + cruise. • Picnic lunch options available. • Entertaining driver commentary. FROM: $163pp. Book..."
+                        - generic [ref=e516]:
+                          - generic [ref=e521]: Milford Sound
+                          - button [ref=e523] [cursor=pointer]:
+                            - img [ref=e524]
+                - button [ref=e529] [cursor=pointer]:
+                  - generic [ref=e530]: Show all
+          - button "Show more AI Overview" [ref=e534]:
+            - generic [ref=e536] [cursor=pointer]:
+              - generic [ref=e537]: Show more
+              - img [ref=e539]
+      - main [ref=e542]:
+        - generic [ref=e546]:
+          - generic [ref=e549]:
+            - heading "Web results" [level=2] [ref=e550]
+            - generic [ref=e551]:
+              - generic [ref=e554]:
+                - 'link "10 BEST Milford Sound Tours in 2026: Review by a Local ... My Queenstown Diary https://myqueenstowndiary.com › ... › Milford Sound" [ref=e556] [cursor=pointer]':
+                  - /url: https://myqueenstowndiary.com/best-milford-sound-tours/
+                  - 'heading "10 BEST Milford Sound Tours in 2026: Review by a Local ..." [level=3] [ref=e557]'
+                  - generic [ref=e562]:
+                    - generic [ref=e564]: My Queenstown Diary
+                    - generic [ref=e566]: https://myqueenstowndiary.com › ... › Milford Sound
+                - button "About this result" [ref=e567] [cursor=pointer]:
+                  - img [ref=e570]
+              - generic [ref=e573]:
+                - generic [ref=e574]:
+                  - text: It's a full-day tour in a small group
+                  - emphasis [ref=e575]: for only $289 NZD
+                  - text: when you book in advance here. Milford Sound Overnight Cruise Fiordland Jewel.
+                - link "Read more" [ref=e576] [cursor=pointer]:
+                  - /url: https://myqueenstowndiary.com/best-milford-sound-tours/#:~:text=It's%20a%20full%2Dday%20tour%20in,Sound%20Overnight%20Cruise%20Fiordland%20Jewel
+              - link "cheapest milford sound day tour from queenstown from myqueenstowndiary.com" [ref=e579] [cursor=pointer]:
+                - /url: https://myqueenstowndiary.com/best-milford-sound-tours/
+                - img "cheapest milford sound day tour from queenstown from myqueenstowndiary.com" [ref=e581]
+          - generic [ref=e586]:
+            - heading "Discussions and forums" [level=2] [ref=e588]
+            - generic [ref=e589]:
+              - generic [ref=e592]:
+                - generic [ref=e594] [cursor=pointer]:
+                  - generic [ref=e597]:
+                    - link "Are there local companies that offer Milford Sound day tours from ... Facebook · New Zealand Travel Forum · 10+ comments · 10 months ago" [ref=e598]:
+                      - /url: https://www.facebook.com/groups/nztravelforum/posts/9809606962409033/
+                      - generic [ref=e599]:
+                        - heading "Are there local companies that offer Milford Sound day tours from ..." [level=3] [ref=e600]:
+                          - link "Are there local companies that offer Milford Sound day tours from ..." [ref=e601]
+                        - generic [ref=e608]:
+                          - generic [ref=e609]: Facebook ·
+                          - generic [ref=e611]:
+                            - generic [ref=e612]:
+                              - generic [ref=e613]: New Zealand Travel Forum
+                              - generic [ref=e614]:
+                                - generic [ref=e615]: ·
+                                - generic [ref=e616]: 10+ comments
+                            - generic [ref=e617]:
+                              - generic [ref=e618]: ·
+                              - generic [ref=e619]: 10 months ago
+                    - generic [ref=e625]:
+                      - generic [ref=e629]: ·
+                      - button "About this result" [ref=e634]:
+                        - img [ref=e637]
+                  - button "Are there local companies that offer Milford Sound day tours from ... Facebook · New Zealand Travel Forum · 10+ comments · 10 months ago" [expanded] [ref=e639]:
+                    - img [ref=e642]
+                - list [ref=e651]:
+                  - listitem [ref=e652]:
+                    - generic [ref=e656]:
+                      - 'link "The original Fiordland tour company: https://www.realnz.com/en/?gclsrc=aw.ds&gad_source=1&gad_campai ... More discussions on Are there local companies that offer Milford Sound day tours from ... Top answer · 2 votes · 10 months ago"':
+                        - /url: https://www.facebook.com/groups/nztravelforum/posts/9809606962409033/
+                      - generic [ref=e658]:
+                        - text: "The original Fiordland tour company: https://www.realnz.com/en/?gclsrc=aw.ds&gad_source=1&gad_campai ..."
+                        - link [ref=e659] [cursor=pointer]:
+                          - /url: https://www.facebook.com/groups/nztravelforum/posts/9809606962409033/
+                          - generic [ref=e660]: More
+                          - img [ref=e662]
+                      - generic [ref=e664]:
+                        - generic [ref=e665]:
+                          - img [ref=e667]
+                          - text: Top answer
+                        - text: · 2 votes · 10 months ago
+                  - listitem [ref=e669]:
+                    - generic [ref=e673]:
+                      - link "We used Get Your Guide a lot. You can find the provider and their website on the GYG app ... More discussions on Are there local companies that offer Milford Sound day tours from ... 2 votes · 10 months ago":
+                        - /url: https://www.facebook.com/groups/nztravelforum/posts/9809606962409033/
+                      - generic [ref=e675]:
+                        - text: We used Get Your Guide a lot. You can find the provider and their website on the GYG app ...
+                        - link [ref=e676] [cursor=pointer]:
+                          - /url: https://www.facebook.com/groups/nztravelforum/posts/9809606962409033/
+                          - generic [ref=e677]: More
+                          - img [ref=e679]
+                      - generic [ref=e681]: 2 votes · 10 months ago
+                  - listitem [ref=e682]:
+                    - generic [ref=e686]:
+                      - link "Go with Cheeky Kiwi Travel they are the best! More discussions on Are there local companies that offer Milford Sound day tours from ... 10 months ago":
+                        - /url: https://www.facebook.com/groups/nztravelforum/posts/9809606962409033/
+                      - generic [ref=e688]:
+                        - text: Go with Cheeky Kiwi Travel they are the best!
+                        - link [ref=e689] [cursor=pointer]:
+                          - /url: https://www.facebook.com/groups/nztravelforum/posts/9809606962409033/
+                          - generic [ref=e690]: More
+                          - img [ref=e692]
+                      - generic [ref=e694]: 10 months ago
+              - generic [ref=e699] [cursor=pointer]:
+                - generic [ref=e702]:
+                  - link "What are the best tours at Milford sound for a day trip? Facebook · New Zealand Travel Forum · 30+ comments · 9 months ago" [ref=e703]:
+                    - /url: https://www.facebook.com/groups/nztravelforum/posts/10051260321577028/
+                    - generic [ref=e704]:
+                      - heading "What are the best tours at Milford sound for a day trip?" [level=3] [ref=e705]:
+                        - link "What are the best tours at Milford sound for a day trip?" [ref=e706]
+                      - generic [ref=e713]:
+                        - generic [ref=e714]: Facebook ·
+                        - generic [ref=e716]:
+                          - generic [ref=e717]:
+                            - generic [ref=e718]: New Zealand Travel Forum
+                            - generic [ref=e719]:
+                              - generic [ref=e720]: ·
+                              - generic [ref=e721]: 30+ comments
+                          - generic [ref=e722]:
+                            - generic [ref=e723]: ·
+                            - generic [ref=e724]: 9 months ago
+                  - generic [ref=e730]:
+                    - generic [ref=e734]: ·
+                    - button "About this result" [ref=e739]:
+                      - img [ref=e742]
+                - button "What are the best tours at Milford sound for a day trip? Facebook · New Zealand Travel Forum · 30+ comments · 9 months ago" [ref=e744]:
+                  - img [ref=e747]
+              - generic [ref=e753] [cursor=pointer]:
+                - generic [ref=e756]:
+                  - link "Day tour from Queenstown to Milford Sound - New Zealand Forum Tripadvisor · 3 months ago" [ref=e757]:
+                    - /url: https://www.tripadvisor.com.au/ShowTopic-g255104-i125-k14931755-Day_tour_from_Queenstown_to_Milford_Sound-New_Zealand.html
+                    - generic [ref=e758]:
+                      - heading "Day tour from Queenstown to Milford Sound - New Zealand Forum" [level=3] [ref=e759]:
+                        - link "Day tour from Queenstown to Milford Sound - New Zealand Forum" [ref=e760]
+                      - generic [ref=e767]:
+                        - generic [ref=e768]: Tripadvisor ·
+                        - generic [ref=e772]: 3 months ago
+                  - generic [ref=e778]:
+                    - generic [ref=e782]: ·
+                    - button "About this result" [ref=e787]:
+                      - img [ref=e790]
+                - button "Day tour from Queenstown to Milford Sound - New Zealand Forum Tripadvisor · 3 months ago" [ref=e792]:
+                  - img [ref=e795]
+              - link "See more discussions" [ref=e798] [cursor=pointer]:
+                - /url: /search?q=cheapest+milford+sound+day+tour+from+queenstown&sca_esv=829b6725c1213f11&sxsrf=ANbL-n7S7-h1ysp49SlJL9D2UFzYVqc5Ig:1776158540282&udm=18&sa=X&ved=2ahUKEwjzxu6Wgu2TAxWh8ckDHYY_CT0Q8poLegQIJhAE
+                - separator [ref=e799]
+                - generic [ref=e800]:
+                  - generic [ref=e801]: See more
+                  - img [ref=e803]
+          - generic [ref=e807]:
+            - heading "Web results" [level=2] [ref=e808]
+            - generic [ref=e809]:
+              - generic [ref=e812]:
+                - link "Top 10 Milford Sound Tours 2026 Klook Travel https://www.klook.com › ... › Tours" [ref=e814] [cursor=pointer]:
+                  - /url: https://www.klook.com/experiences/list/milford-sound-tours/c702215-cate9/
+                  - heading "Top 10 Milford Sound Tours 2026" [level=3] [ref=e815]
+                  - generic [ref=e820]:
+                    - generic [ref=e822]: Klook Travel
+                    - generic [ref=e824]: https://www.klook.com › ... › Tours
+                - button "About this result" [ref=e825] [cursor=pointer]:
+                  - img [ref=e828]
+              - generic [ref=e831]:
+                - generic [ref=e832]:
+                  - emphasis [ref=e833]: Queenstown Milford Sound Full-Day Nature Cruise
+                  - text: · 4.7 (501) 10K+ booked. From US$ 135.29 ; Milford Sound Day Tour with Glass Roof Coach · 4.5 (442) 10K+ booked.
+                - link "Read more" [ref=e834] [cursor=pointer]:
+                  - /url: https://www.klook.com/experiences/list/milford-sound-tours/c702215-cate9/#:~:text=Queenstown%20Milford%20Sound%20Full%2DDay%20Nature,Cruise&text=4.7%20(501)%2010K%2B%20booked,From%20US%24%20135.29&text=Milford%20Sound%20Day%20Tour%20with,Glass%20Roof%20Coach&text=4.5%20(442)%2010K%2B%20booked
+              - link "cheapest milford sound day tour from queenstown from www.klook.com" [ref=e837] [cursor=pointer]:
+                - /url: https://www.klook.com/experiences/list/milford-sound-tours/c702215-cate9/
+                - img "cheapest milford sound day tour from queenstown from www.klook.com" [ref=e839]
+              - img "Rated 4,2 out of 5, (732) user reviews" [ref=e844]:
+                - text: 4,2
+                - img [ref=e845]
+                - text: (732)
+          - generic [ref=e851]:
+            - generic [ref=e854]:
+              - link "20-60% Off Milford Sound Cruises & Tours - Queenstown Bookme New Zealand https://www.bookme.co.nz › activities › attractions › milf..." [ref=e856] [cursor=pointer]:
+                - /url: https://www.bookme.co.nz/things-to-do/queenstown/rock_peak/activities/attractions/milford-sound
+                - heading "20-60% Off Milford Sound Cruises & Tours - Queenstown" [level=3] [ref=e857]
+                - generic [ref=e862]:
+                  - generic [ref=e864]: Bookme New Zealand
+                  - generic [ref=e866]: https://www.bookme.co.nz › activities › attractions › milf...
+              - button "About this result" [ref=e867] [cursor=pointer]:
+                - img [ref=e870]
+            - generic [ref=e873]:
+              - generic [ref=e874]:
+                - text: Pure Milford –
+                - emphasis [ref=e875]: Milford Sound
+                - text: Coach + Cruise Inc Lunch – ex
+                - emphasis [ref=e876]: Queenstown
+                - text: or Te Anau. 4.7697. Hot Deal.
+                - emphasis [ref=e877]: Milford Sound
+                - text: Coach. 4 Apr - 12 Apr. Available from13% Off.
+              - link "Read more" [ref=e878] [cursor=pointer]:
+                - /url: https://www.bookme.co.nz/things-to-do/queenstown/rock_peak/activities/attractions/milford-sound#:~:text=Pure%20Milford%20%E2%80%93%20Milford%20Sound,Available%20from13%25%20Off
+            - link "cheapest milford sound day tour from queenstown from www.bookme.co.nz" [ref=e881] [cursor=pointer]:
+              - /url: https://www.bookme.co.nz/things-to-do/queenstown/rock_peak/activities/attractions/milford-sound
+              - img "cheapest milford sound day tour from queenstown from www.bookme.co.nz" [ref=e883]
+          - generic [ref=e889]:
+            - generic [ref=e890]:
+              - heading "Find related products & services" [level=2] [ref=e891]
+              - button "About the source" [ref=e894] [cursor=pointer]:
+                - img [ref=e895]
+            - list [ref=e899]:
+              - listitem [ref=e900]:
+                - link "Queenstown day trips" [ref=e901] [cursor=pointer]:
+                  - /url: http://www.google.com/search?q=Queenstown+day+trips&mrq=1&mrqri=0&mrqei=TAfeafPwEKHjp84Phv-k6AM&sa=X&ved=2ahUKEwjzxu6Wgu2TAxWh8ckDHYY_CT0QyO0OKAB6BAhoEAU
+                  - generic [ref=e902]: Queenstown day trips
+                  - img [ref=e905]
+              - listitem [ref=e907]:
+                - link "Milford sound helicopter" [ref=e908] [cursor=pointer]:
+                  - /url: http://www.google.com/search?q=Milford+sound+helicopter&mrq=1&mrqri=1&mrqei=TAfeafPwEKHjp84Phv-k6AM&sa=X&ved=2ahUKEwjzxu6Wgu2TAxWh8ckDHYY_CT0QyO0OKAF6BAhoEAY
+                  - generic [ref=e909]: Milford sound helicopter
+                  - img [ref=e912]
+              - listitem [ref=e914]:
+                - link "Milford sound cruise" [ref=e915] [cursor=pointer]:
+                  - /url: http://www.google.com/search?q=Milford+sound+cruise&mrq=1&mrqri=2&mrqei=TAfeafPwEKHjp84Phv-k6AM&sa=X&ved=2ahUKEwjzxu6Wgu2TAxWh8ckDHYY_CT0QyO0OKAJ6BAhoEAc
+                  - generic [ref=e916]: Milford sound cruise
+                  - img [ref=e919]
+              - listitem [ref=e921]:
+                - link "Things to do in queenstown" [ref=e922] [cursor=pointer]:
+                  - /url: http://www.google.com/search?q=Things+to+do+in+queenstown&mrq=1&mrqri=3&mrqei=TAfeafPwEKHjp84Phv-k6AM&sa=X&ved=2ahUKEwjzxu6Wgu2TAxWh8ckDHYY_CT0QyO0OKAN6BAhoEAg
+                  - generic [ref=e923]: Things to do in queenstown
+                  - img [ref=e926]
+              - listitem [ref=e928]:
+                - link "What to do in queenstown" [ref=e929] [cursor=pointer]:
+                  - /url: http://www.google.com/search?q=What+to+do+in+queenstown&mrq=1&mrqri=4&mrqei=TAfeafPwEKHjp84Phv-k6AM&sa=X&ved=2ahUKEwjzxu6Wgu2TAxWh8ckDHYY_CT0QyO0OKAR6BAhoEAk
+                  - generic [ref=e930]: What to do in queenstown
+                  - img [ref=e933]
+              - listitem [ref=e935]:
+                - link "Milford sound price" [ref=e936] [cursor=pointer]:
+                  - /url: http://www.google.com/search?q=Milford+sound+price&mrq=1&mrqri=5&mrqei=TAfeafPwEKHjp84Phv-k6AM&sa=X&ved=2ahUKEwjzxu6Wgu2TAxWh8ckDHYY_CT0QyO0OKAV6BAhoEAo
+                  - generic [ref=e937]: Milford sound price
+                  - img [ref=e940]
+            - generic [ref=e944]: These searches help you find relevant offers from advertisers
+          - generic [ref=e948]:
+            - generic [ref=e951]:
+              - link "Milford Sound Day Tour from Queenstown with Optional ... Tiket.com https://www.tiket.com › en-id › to-do › tiket-milford-so..." [ref=e953] [cursor=pointer]:
+                - /url: https://www.tiket.com/en-id/to-do/tiket-milford-sound-day-tour-from-queenstown-with-optional-flight
+                - heading "Milford Sound Day Tour from Queenstown with Optional ..." [level=3] [ref=e954]
+                - generic [ref=e959]:
+                  - generic [ref=e961]: Tiket.com
+                  - generic [ref=e963]: https://www.tiket.com › en-id › to-do › tiket-milford-so...
+              - button "About this result" [ref=e964] [cursor=pointer]:
+                - img [ref=e967]
+            - generic [ref=e971]:
+              - text: Booking Milford Sound Day Tour from Queenstown with Optional Flight ticket.
+              - emphasis [ref=e972]: Get promo prices of Milford Sound Day Tour from Queenstown
+              - text: with Optional Flight ...
+          - generic [ref=e976]:
+            - heading "Sponsored results" [level=2] [ref=e982]
+            - generic [ref=e983]:
+              - generic [ref=e989]:
+                - generic [ref=e994]:
+                  - generic [ref=e995]:
+                    - link "Milford Sound Piopiotahi Day Trip - Deals of the Day from Klook klook.com https://www.klook.com" [ref=e996] [cursor=pointer]:
+                      - /url: https://www.klook.com/en-US/destination/p50291062-milford-sound-piopiotahi/5-tour/
+                      - heading "Milford Sound Piopiotahi Day Trip - Deals of the Day from Klook" [level=3] [ref=e997]
+                      - generic [ref=e1003]:
+                        - generic [ref=e1005]: klook.com
+                        - generic [ref=e1006]: https://www.klook.com
+                    - button "Why this ad?" [ref=e1009] [cursor=pointer]:
+                      - img [ref=e1011]
+                  - generic [ref=e1015]: Explore Milford Sound Piopiotahi Day Trip With Klook! Real Reviews.
+                  - generic [ref=e1017]:
+                    - text: ‎
+                    - link "Klook-Up To 60% Off Activities" [ref=e1018] [cursor=pointer]:
+                      - /url: /aclk?sa=L&ai=DChsSEwj-k_aWgu2TAxXySn8AHUQELdkYACICCAIQCBoCb2E&co=1&ase=2&gclid=Cj0KCQjwy_fOBhC6ARIsAHKFB785gfE9DMU45NaS8oaaOuHf-xsIU1TGl2wGZxYfMroO7mamUx0MmsoaAp-UEALw_wcB&cid=CAASWuRoTPfXE5Mdr3LdiycmfebJK_xUhX5_Zu03Qa3ReS132uQKQyTuRknKEu2exzb89rngDp7PqJIoHHpbExUNo4amdr0stpeKTSFIM9UY1-K6Ieb1Dm2Eg1G9Zg&cce=2&category=acrcp_v1_32&sig=AOD64_3jRJXwSSStFEitejX4dbP3sPYqrg&adurl=&q=
+                    - text: · ‎
+                    - link "No Fee & Earn Credits" [ref=e1019] [cursor=pointer]:
+                      - /url: /aclk?sa=L&ai=DChsSEwj-k_aWgu2TAxXySn8AHUQELdkYACICCAIQCRoCb2E&co=1&ase=2&gclid=Cj0KCQjwy_fOBhC6ARIsAHKFB7_GmJ_g_NLzZHFCgNWRo2auCTYbCUw2MM8j2qTSqL0rSq29Blaqqp8aAkONEALw_wcB&cid=CAASWuRoTPfXE5Mdr3LdiycmfebJK_xUhX5_Zu03Qa3ReS132uQKQyTuRknKEu2exzb89rngDp7PqJIoHHpbExUNo4amdr0stpeKTSFIM9UY1-K6Ieb1Dm2Eg1G9Zg&cce=2&category=acrcp_v1_32&sig=AOD64_2Vjw1yItSAztKJAovOKKuPSuet9w&adurl=&q=
+                    - text: · ‎
+                    - link "Private Airport Transfers" [ref=e1020] [cursor=pointer]:
+                      - /url: https://www.klook.com/en-US/airport-transfers/?_currency=IDR
+                    - text: · ‎
+                    - link "Wifi & Sim card" [ref=e1021] [cursor=pointer]:
+                      - /url: https://www.klook.com/en-US/wifi-sim-card/?_currency=IDR
+                - generic [ref=e1026]:
+                  - generic [ref=e1027]:
+                    - link "20-50% Off Milford Sound Tours | Milford Sound Nature Cruise Bookme New Zealand https://www.bookme.co.nz › milford-sound" [ref=e1028] [cursor=pointer]:
+                      - /url: https://www.bookme.co.nz/things-to-do/queenstown/activities/attractions/milford-sound
+                      - heading "20-50% Off Milford Sound Tours | Milford Sound Nature Cruise" [level=3] [ref=e1029]
+                      - generic [ref=e1035]:
+                        - generic [ref=e1037]: Bookme New Zealand
+                        - generic [ref=e1038]: https://www.bookme.co.nz › milford-sound
+                    - button "Why this ad?" [ref=e1041] [cursor=pointer]:
+                      - img [ref=e1043]
+                  - generic [ref=e1047]: "Book & Support Local - Bookme is 100% NZ owned. Amazing Deals #1 for Milford Sound Cruises, Day Trips, Kayaking, Flights & Tours. Best Price Guarantee. Attractions: Cultural Attractions, Glenorchy, Doubtful Sound, Milford Sound, Natural Wonders."
+                  - generic [ref=e1049]:
+                    - text: ‎
+                    - link "Milford Sound Tours" [ref=e1050] [cursor=pointer]:
+                      - /url: https://www.bookme.co.nz/things-to-do/queenstown/milford-sound/home
+                    - text: · ‎
+                    - link "Queenstown Deals" [ref=e1051] [cursor=pointer]:
+                      - /url: https://www.bookme.co.nz/things-to-do/queenstown/home
+                    - text: · ‎
+                    - link "Ex Queenstown Or Te Anau" [ref=e1052] [cursor=pointer]:
+                      - /url: https://www.bookme.co.nz/things-to-do/queenstown/activity/milford-sound-coach-nature-cruise-w-picnic-lunch-ex-queenstown-or-te-anau-southern-discoveries/4576
+                    - text: · ‎
+                    - link "All Deals" [ref=e1053] [cursor=pointer]:
+                      - /url: https://www.bookme.co.nz/things-to-do/queenstown/vouchers
+                    - text: · ‎
+                    - link "Fly-Cruise-Fly" [ref=e1054] [cursor=pointer]:
+                      - /url: https://www.bookme.co.nz/things-to-do/queenstown/activity/milford-sound-fly-cruise-fly-true-south-flights/13
+                  - generic [ref=e1059]: 1M+ visits in past month
+              - button "Hide sponsored results" [ref=e1060] [cursor=pointer]:
+                - separator [ref=e1061]
+                - generic [ref=e1062]:
+                  - generic [ref=e1063]: Hide sponsored results
+                  - img [ref=e1065]
+          - generic [ref=e1070]:
+            - generic [ref=e1073]:
+              - link "Milford Sound Day Tour - Queenstown Intercity NZ https://www.intercity.co.nz › intercity-milford-sound-tour" [ref=e1075] [cursor=pointer]:
+                - /url: https://www.intercity.co.nz/tours/intercity-milford-sound-tour
+                - heading "Milford Sound Day Tour - Queenstown" [level=3] [ref=e1076]
+                - generic [ref=e1081]:
+                  - generic [ref=e1083]: Intercity NZ
+                  - generic [ref=e1085]: https://www.intercity.co.nz › intercity-milford-sound-tour
+              - button "About this result" [ref=e1086] [cursor=pointer]:
+                - img [ref=e1089]
+            - generic [ref=e1092]:
+              - generic [ref=e1093]:
+                - text: Book a
+                - emphasis [ref=e1094]: great-value Milford Sound day tour
+                - text: from Queenstown or Te Anau and see one of the world's most spectacular natural attractions.
+              - link "Read more" [ref=e1095] [cursor=pointer]:
+                - /url: https://www.intercity.co.nz/tours/intercity-milford-sound-tour#:~:text=Book%20a%20great%2Dvalue%20Milford%20Sound,world's%20most%20spectacular%20natural%20attractions.
+            - link "cheapest milford sound day tour from queenstown from www.intercity.co.nz" [ref=e1098] [cursor=pointer]:
+              - /url: https://www.intercity.co.nz/tours/intercity-milford-sound-tour
+              - img "cheapest milford sound day tour from queenstown from www.intercity.co.nz" [ref=e1100]
+          - generic [ref=e1104]:
+            - generic [ref=e1107]:
+              - link "THE 10 BEST Milford Sound Private Tours (with Prices) Tripadvisor https://www.tripadvisor.com › Attractions-g255121-Act..." [ref=e1109] [cursor=pointer]:
+                - /url: https://www.tripadvisor.com/Attractions-g255121-Activities-c42-t235-Milford_Sound_Murihiku_Southland_South_Island.html
+                - heading "THE 10 BEST Milford Sound Private Tours (with Prices)" [level=3] [ref=e1110]
+                - generic [ref=e1115]:
+                  - generic [ref=e1117]: Tripadvisor
+                  - generic [ref=e1119]: https://www.tripadvisor.com › Attractions-g255121-Act...
+              - button "About this result" [ref=e1120] [cursor=pointer]:
+                - img [ref=e1123]
+            - generic [ref=e1126]:
+              - generic [ref=e1127]:
+                - text: Experience the breathtaking beauty of Milford Sound on a
+                - emphasis [ref=e1128]: private full-day tour from Queenstown
+                - text: . Travel along Lake Wakatipu into Fiordland National Park, ...
+              - link "Read more" [ref=e1129] [cursor=pointer]:
+                - /url: https://www.tripadvisor.com/Attractions-g255121-Activities-c42-t235-Milford_Sound_Murihiku_Southland_South_Island.html#:~:text=Experience%20the%20breathtaking%20beauty%20of,Anau%20for%20coffee%20or%20snacks.
+            - link "cheapest milford sound day tour from queenstown from www.tripadvisor.com" [ref=e1132] [cursor=pointer]:
+              - /url: https://www.tripadvisor.com/Attractions-g255121-Activities-c42-t235-Milford_Sound_Murihiku_Southland_South_Island.html
+              - img "cheapest milford sound day tour from queenstown from www.tripadvisor.com" [ref=e1134]
+          - generic [ref=e1138]:
+            - generic [ref=e1141]:
+              - link "Budget Itinerary Milford Sound https://www.milford-sound.co.nz › travel-itineraries › b..." [ref=e1143] [cursor=pointer]:
+                - /url: https://www.milford-sound.co.nz/travel-itineraries/budget-itinerary/
+                - heading "Budget Itinerary" [level=3] [ref=e1144]
+                - generic [ref=e1149]:
+                  - generic [ref=e1151]: Milford Sound
+                  - generic [ref=e1153]: https://www.milford-sound.co.nz › travel-itineraries › b...
+              - button "About this result" [ref=e1154] [cursor=pointer]:
+                - img [ref=e1157]
+            - generic [ref=e1161]:
+              - text: This Budget Milford Sound itinerary takes you on an unforgettable, scenic journey on a budget!
+              - emphasis [ref=e1162]: Get low cost travel ideas
+              - text: for your New Zealand trip.
+            - link "cheapest milford sound day tour from queenstown from www.milford-sound.co.nz" [ref=e1165] [cursor=pointer]:
+              - /url: https://www.milford-sound.co.nz/travel-itineraries/budget-itinerary/
+              - img "cheapest milford sound day tour from queenstown from www.milford-sound.co.nz" [ref=e1167]
+          - generic [ref=e1171]:
+            - generic [ref=e1174]:
+              - link "Small Group Milford Sound Day Tour - Altitude Tours newzealand.com https://www.newzealand.com › ... › Sightseeing day tours" [ref=e1176] [cursor=pointer]:
+                - /url: https://www.newzealand.com/au/plan/business/premium-small-group-milford-sound-tour/
+                - heading "Small Group Milford Sound Day Tour - Altitude Tours" [level=3] [ref=e1177]
+                - generic [ref=e1182]:
+                  - generic [ref=e1184]: newzealand.com
+                  - generic [ref=e1186]: https://www.newzealand.com › ... › Sightseeing day tours
+              - button "About this result" [ref=e1187] [cursor=pointer]:
+                - img [ref=e1190]
+            - generic [ref=e1193]:
+              - generic [ref=e1194]:
+                - text: Experience
+                - emphasis [ref=e1195]: Milford Sound
+                - text: with Altitude Tours on a top-rated small group
+                - emphasis [ref=e1196]: day tour
+                - text: . Departing from
+                - emphasis [ref=e1197]: Queenstown
+                - text: ", this tour offers an escape from the crowds."
+              - link "Read more" [ref=e1198] [cursor=pointer]:
+                - /url: https://www.newzealand.com/au/plan/business/premium-small-group-milford-sound-tour/#:~:text=Experience%20Milford%20Sound%20with%20Altitude,personal%20with%20Fiordland's%20iconic%20scenery.
+            - link "cheapest milford sound day tour from queenstown from www.newzealand.com" [ref=e1201] [cursor=pointer]:
+              - /url: https://www.newzealand.com/au/plan/business/premium-small-group-milford-sound-tour/
+              - img "cheapest milford sound day tour from queenstown from www.newzealand.com" [ref=e1203]
+          - generic [ref=e1207]:
+            - heading "People also ask" [level=2] [ref=e1209]
+            - generic [ref=e1210]:
+              - button "Can you do Milford Sound as a day trip from Queenstown?" [ref=e1216] [cursor=pointer]:
+                - generic [ref=e1218]: Can you do Milford Sound as a day trip from Queenstown?
+                - img [ref=e1221]
+              - button "Are Milford Sound tours worth the cost?" [ref=e1230] [cursor=pointer]:
+                - generic [ref=e1232]: Are Milford Sound tours worth the cost?
+                - img [ref=e1235]
+              - button "What is the best Milford Sound Tour?" [ref=e1244] [cursor=pointer]:
+                - generic [ref=e1246]: What is the best Milford Sound Tour?
+                - img [ref=e1249]
+              - button "What time of day is best to go to Milford Sound?" [ref=e1258] [cursor=pointer]:
+                - generic [ref=e1260]: What time of day is best to go to Milford Sound?
+                - img [ref=e1263]
+          - generic [ref=e1268]:
+            - heading "Web results" [level=2] [ref=e1269]
+            - generic [ref=e1270]:
+              - generic [ref=e1273]:
+                - 'link "Milford Sound, New Zealand: Weather, Wildlife & ... - RealNZ RealNZ https://www.realnz.com › destinations › milford-sound" [ref=e1275] [cursor=pointer]':
+                  - /url: https://www.realnz.com/en/destinations/milford-sound/
+                  - 'heading "Milford Sound, New Zealand: Weather, Wildlife & ... - RealNZ" [level=3] [ref=e1276]'
+                  - generic [ref=e1281]:
+                    - generic [ref=e1283]: RealNZ
+                    - generic [ref=e1285]: https://www.realnz.com › destinations › milford-sound
+                - button "About this result" [ref=e1286] [cursor=pointer]:
+                  - img [ref=e1289]
+              - generic [ref=e1292]:
+                - generic [ref=e1293]:
+                  - text: Coaches depart
+                  - emphasis [ref=e1294]: Queenstown
+                  - text: and Te Anau
+                  - emphasis [ref=e1295]: daily
+                  - text: with commentary and scenic stops along the way, making it an easy, stress-free way to arrive ready to cruise. By air.
+                - link "Read more" [ref=e1296] [cursor=pointer]:
+                  - /url: https://www.realnz.com/en/destinations/milford-sound/#:~:text=Coaches%20depart%20Queenstown%20and%20Te,By%20air
+              - link "cheapest milford sound day tour from queenstown from www.realnz.com" [ref=e1299] [cursor=pointer]:
+                - /url: https://www.realnz.com/en/destinations/milford-sound/
+                - img "cheapest milford sound day tour from queenstown from www.realnz.com" [ref=e1301]
+              - img "Rated 4,7 out of 5, (2.070) user reviews" [ref=e1306]:
+                - text: 4,7
+                - img [ref=e1307]
+                - text: (2.070)
+        - generic [ref=e1311]:
+          - generic [ref=e1316]:
+            - heading "People also search for" [level=2] [ref=e1318]
+            - generic [ref=e1320]:
+              - generic [ref=e1321]:
+                - link "Cheapest Milford Sound tour from Queenstown" [ref=e1325] [cursor=pointer]:
+                  - /url: /search?sca_esv=829b6725c1213f11&sxsrf=ANbL-n7S7-h1ysp49SlJL9D2UFzYVqc5Ig:1776158540282&q=Cheapest+Milford+Sound+tour+from+Queenstown&sa=X&ved=2ahUKEwjzxu6Wgu2TAxWh8ckDHYY_CT0Q1QJ6BAgyEAE
+                  - generic [ref=e1326]:
+                    - generic [ref=e1331]: Cheapest Milford Sound tour from Queenstown
+                    - img [ref=e1335]
+                - link "Best Milford Sound tour from Queenstown" [ref=e1340] [cursor=pointer]:
+                  - /url: /search?sca_esv=829b6725c1213f11&sxsrf=ANbL-n7S7-h1ysp49SlJL9D2UFzYVqc5Ig:1776158540282&q=Best+Milford+Sound+tour+from+Queenstown&sa=X&ved=2ahUKEwjzxu6Wgu2TAxWh8ckDHYY_CT0Q1QJ6BAg4EAE
+                  - generic [ref=e1341]:
+                    - generic [ref=e1346]: Best Milford Sound tour from Queenstown
+                    - img [ref=e1350]
+                - link "Milford Sound tour from Te Anau" [ref=e1355] [cursor=pointer]:
+                  - /url: /search?sca_esv=829b6725c1213f11&sxsrf=ANbL-n7S7-h1ysp49SlJL9D2UFzYVqc5Ig:1776158540282&q=Milford+Sound+tour+from+Te+Anau&sa=X&ved=2ahUKEwjzxu6Wgu2TAxWh8ckDHYY_CT0Q1QJ6BAg3EAE
+                  - generic [ref=e1356]:
+                    - generic [ref=e1361]: Milford Sound tour from Te Anau
+                    - img [ref=e1365]
+                - link "Milford Sound day cruise" [ref=e1370] [cursor=pointer]:
+                  - /url: /search?sca_esv=829b6725c1213f11&sxsrf=ANbL-n7S7-h1ysp49SlJL9D2UFzYVqc5Ig:1776158540282&q=Milford+Sound+day+cruise&sa=X&ved=2ahUKEwjzxu6Wgu2TAxWh8ckDHYY_CT0Q1QJ6BAg2EAE
+                  - generic [ref=e1371]:
+                    - generic [ref=e1376]: Milford Sound day cruise
+                    - img [ref=e1380]
+              - generic [ref=e1382]:
+                - link "Milford Sound small group tour from Queenstown" [ref=e1386] [cursor=pointer]:
+                  - /url: /search?sca_esv=829b6725c1213f11&sxsrf=ANbL-n7S7-h1ysp49SlJL9D2UFzYVqc5Ig:1776158540282&q=Milford+Sound+small+group+tour+from+Queenstown&sa=X&ved=2ahUKEwjzxu6Wgu2TAxWh8ckDHYY_CT0Q1QJ6BAg1EAE
+                  - generic [ref=e1387]:
+                    - generic [ref=e1392]: Milford Sound small group tour from Queenstown
+                    - img [ref=e1396]
+                - link "Milford Sound day tour from Te Anau" [ref=e1401] [cursor=pointer]:
+                  - /url: /search?sca_esv=829b6725c1213f11&sxsrf=ANbL-n7S7-h1ysp49SlJL9D2UFzYVqc5Ig:1776158540282&q=Milford+Sound+day+tour+from+Te+Anau&sa=X&ved=2ahUKEwjzxu6Wgu2TAxWh8ckDHYY_CT0Q1QJ6BAg0EAE
+                  - generic [ref=e1402]:
+                    - generic [ref=e1407]: Milford Sound day tour from Te Anau
+                    - img [ref=e1411]
+                - link "Milford Sound bus tour from Queenstown" [ref=e1416] [cursor=pointer]:
+                  - /url: /search?sca_esv=829b6725c1213f11&sxsrf=ANbL-n7S7-h1ysp49SlJL9D2UFzYVqc5Ig:1776158540282&q=Milford+Sound+bus+tour+from+Queenstown&sa=X&ved=2ahUKEwjzxu6Wgu2TAxWh8ckDHYY_CT0Q1QJ6BAgzEAE
+                  - generic [ref=e1417]:
+                    - generic [ref=e1422]: Milford Sound bus tour from Queenstown
+                    - img [ref=e1426]
+                - link "Milford Sound cruise tour" [ref=e1431] [cursor=pointer]:
+                  - /url: /search?sca_esv=829b6725c1213f11&sxsrf=ANbL-n7S7-h1ysp49SlJL9D2UFzYVqc5Ig:1776158540282&q=Milford+Sound+cruise+tour&sa=X&ved=2ahUKEwjzxu6Wgu2TAxWh8ckDHYY_CT0Q1QJ6BAgxEAE
+                  - generic [ref=e1432]:
+                    - generic [ref=e1437]: Milford Sound cruise tour
+                    - img [ref=e1441]
+          - navigation [ref=e1443]:
+            - heading "Page navigation" [level=1] [ref=e1444]
+            - text: "1"
+            - link "Page 2" [ref=e1447] [cursor=pointer]:
+              - /url: /search?q=cheapest+milford+sound+day+tour+from+queenstown&sca_esv=829b6725c1213f11&sxsrf=ANbL-n7S7-h1ysp49SlJL9D2UFzYVqc5Ig:1776158540282&ei=TAfeafPwEKHjp84Phv-k6AM&start=10&sa=N&sstk=Af77f_cyA4QlONVkc42nWvpzuG9qxHQVo_1T_0AHB7M0tl95hD-yN9yEWSy8czV87QFu1j_E-1_YCMsCL2CPNoTJYSR5xqfwxwEp5g&ved=2ahUKEwjzxu6Wgu2TAxWh8ckDHYY_CT0Q8tMDegQILxAE
+              - text: "2"
+            - link "Page 3" [ref=e1449] [cursor=pointer]:
+              - /url: /search?q=cheapest+milford+sound+day+tour+from+queenstown&sca_esv=829b6725c1213f11&sxsrf=ANbL-n7S7-h1ysp49SlJL9D2UFzYVqc5Ig:1776158540282&ei=TAfeafPwEKHjp84Phv-k6AM&start=20&sa=N&sstk=Af77f_cyA4QlONVkc42nWvpzuG9qxHQVo_1T_0AHB7M0tl95hD-yN9yEWSy8czV87QFu1j_E-1_YCMsCL2CPNoTJYSR5xqfwxwEp5g&ved=2ahUKEwjzxu6Wgu2TAxWh8ckDHYY_CT0Q8tMDegQILxAG
+              - text: "3"
+            - link "Page 4" [ref=e1451] [cursor=pointer]:
+              - /url: /search?q=cheapest+milford+sound+day+tour+from+queenstown&sca_esv=829b6725c1213f11&sxsrf=ANbL-n7S7-h1ysp49SlJL9D2UFzYVqc5Ig:1776158540282&ei=TAfeafPwEKHjp84Phv-k6AM&start=30&sa=N&sstk=Af77f_cyA4QlONVkc42nWvpzuG9qxHQVo_1T_0AHB7M0tl95hD-yN9yEWSy8czV87QFu1j_E-1_YCMsCL2CPNoTJYSR5xqfwxwEp5g&ved=2ahUKEwjzxu6Wgu2TAxWh8ckDHYY_CT0Q8tMDegQILxAI
+              - text: "4"
+            - link "Page 5" [ref=e1453] [cursor=pointer]:
+              - /url: /search?q=cheapest+milford+sound+day+tour+from+queenstown&sca_esv=829b6725c1213f11&sxsrf=ANbL-n7S7-h1ysp49SlJL9D2UFzYVqc5Ig:1776158540282&ei=TAfeafPwEKHjp84Phv-k6AM&start=40&sa=N&sstk=Af77f_cyA4QlONVkc42nWvpzuG9qxHQVo_1T_0AHB7M0tl95hD-yN9yEWSy8czV87QFu1j_E-1_YCMsCL2CPNoTJYSR5xqfwxwEp5g&ved=2ahUKEwjzxu6Wgu2TAxWh8ckDHYY_CT0Q8tMDegQILxAK
+              - text: "5"
+            - link "Page 6" [ref=e1455] [cursor=pointer]:
+              - /url: /search?q=cheapest+milford+sound+day+tour+from+queenstown&sca_esv=829b6725c1213f11&sxsrf=ANbL-n7S7-h1ysp49SlJL9D2UFzYVqc5Ig:1776158540282&ei=TAfeafPwEKHjp84Phv-k6AM&start=50&sa=N&sstk=Af77f_cyA4QlONVkc42nWvpzuG9qxHQVo_1T_0AHB7M0tl95hD-yN9yEWSy8czV87QFu1j_E-1_YCMsCL2CPNoTJYSR5xqfwxwEp5g&ved=2ahUKEwjzxu6Wgu2TAxWh8ckDHYY_CT0Q8tMDegQILxAM
+              - text: "6"
+            - link "Page 7" [ref=e1457] [cursor=pointer]:
+              - /url: /search?q=cheapest+milford+sound+day+tour+from+queenstown&sca_esv=829b6725c1213f11&sxsrf=ANbL-n7S7-h1ysp49SlJL9D2UFzYVqc5Ig:1776158540282&ei=TAfeafPwEKHjp84Phv-k6AM&start=60&sa=N&sstk=Af77f_cyA4QlONVkc42nWvpzuG9qxHQVo_1T_0AHB7M0tl95hD-yN9yEWSy8czV87QFu1j_E-1_YCMsCL2CPNoTJYSR5xqfwxwEp5g&ved=2ahUKEwjzxu6Wgu2TAxWh8ckDHYY_CT0Q8tMDegQILxAO
+              - text: "7"
+            - link "Page 8" [ref=e1459] [cursor=pointer]:
+              - /url: /search?q=cheapest+milford+sound+day+tour+from+queenstown&sca_esv=829b6725c1213f11&sxsrf=ANbL-n7S7-h1ysp49SlJL9D2UFzYVqc5Ig:1776158540282&ei=TAfeafPwEKHjp84Phv-k6AM&start=70&sa=N&sstk=Af77f_cyA4QlONVkc42nWvpzuG9qxHQVo_1T_0AHB7M0tl95hD-yN9yEWSy8czV87QFu1j_E-1_YCMsCL2CPNoTJYSR5xqfwxwEp5g&ved=2ahUKEwjzxu6Wgu2TAxWh8ckDHYY_CT0Q8tMDegQILxAQ
+              - text: "8"
+            - link "Page 9" [ref=e1461] [cursor=pointer]:
+              - /url: /search?q=cheapest+milford+sound+day+tour+from+queenstown&sca_esv=829b6725c1213f11&sxsrf=ANbL-n7S7-h1ysp49SlJL9D2UFzYVqc5Ig:1776158540282&ei=TAfeafPwEKHjp84Phv-k6AM&start=80&sa=N&sstk=Af77f_cyA4QlONVkc42nWvpzuG9qxHQVo_1T_0AHB7M0tl95hD-yN9yEWSy8czV87QFu1j_E-1_YCMsCL2CPNoTJYSR5xqfwxwEp5g&ved=2ahUKEwjzxu6Wgu2TAxWh8ckDHYY_CT0Q8tMDegQILxAS
+              - text: "9"
+            - link "Page 10" [ref=e1463] [cursor=pointer]:
+              - /url: /search?q=cheapest+milford+sound+day+tour+from+queenstown&sca_esv=829b6725c1213f11&sxsrf=ANbL-n7S7-h1ysp49SlJL9D2UFzYVqc5Ig:1776158540282&ei=TAfeafPwEKHjp84Phv-k6AM&start=90&sa=N&sstk=Af77f_cyA4QlONVkc42nWvpzuG9qxHQVo_1T_0AHB7M0tl95hD-yN9yEWSy8czV87QFu1j_E-1_YCMsCL2CPNoTJYSR5xqfwxwEp5g&ved=2ahUKEwjzxu6Wgu2TAxWh8ckDHYY_CT0Q8tMDegQILxAU
+              - text: "10"
+            - heading "Next" [level=2] [ref=e1465]:
+              - link "Next" [ref=e1466] [cursor=pointer]:
+                - /url: /search?q=cheapest+milford+sound+day+tour+from+queenstown&sca_esv=829b6725c1213f11&sxsrf=ANbL-n7S7-h1ysp49SlJL9D2UFzYVqc5Ig:1776158540282&ei=TAfeafPwEKHjp84Phv-k6AM&start=10&sa=N&sstk=Af77f_cyA4QlONVkc42nWvpzuG9qxHQVo_1T_0AHB7M0tl95hD-yN9yEWSy8czV87QFu1j_E-1_YCMsCL2CPNoTJYSR5xqfwxwEp5g&ved=2ahUKEwjzxu6Wgu2TAxWh8ckDHYY_CT0Q8NMDegQILxAW
+                - generic [ref=e1468]: Next
+        - navigation
+    - contentinfo [ref=e1469]:
+      - heading "Footer links" [level=1] [ref=e1470]
+      - generic [ref=e1474]:
+        - generic [ref=e1478]: Results are not personalised
+        - generic [ref=e1480]:
+          - text: Indonesia
+          - generic [ref=e1482]:
+            - button "West Cilandak, Jakarta - From your IP address" [ref=e1484] [cursor=pointer]:
+              - generic [ref=e1485]: West Cilandak, Jakarta
+              - generic [ref=e1487]:
+                - text: "-"
+                - generic [ref=e1488]: From your IP address
+            - text: "-"
+            - button "Update location" [ref=e1490] [cursor=pointer]: Update location
+        - generic [ref=e1493]:
+          - link "Help" [ref=e1494] [cursor=pointer]:
+            - /url: https://support.google.com/websearch/?p=ws_results_help&hl=en-ID&fg=1
+          - link "Send feedback" [ref=e1495] [cursor=pointer]:
+            - /url: "#"
+          - link "Privacy" [ref=e1496] [cursor=pointer]:
+            - /url: https://policies.google.com/privacy?hl=en-ID&fg=1
+          - link "Terms" [ref=e1497] [cursor=pointer]:
+            - /url: https://policies.google.com/terms?hl=en-ID&fg=1

@@ -1,0 +1,39 @@
+apiVersion: kagent.dev/v1alpha2
+kind: Agent
+metadata:
+  name: claude-bridge-agent
+  namespace: kagent
+spec:
+  description: "Claude-powered bridge agent (Phase 1 MVP)"
+  type: BYO
+  byo:
+    deployment:
+      image: ghcr.io/barockok/claude-adk:latest
+      imagePullPolicy: Always
+      replicas: 1
+      env:
+        - name: AGENT_NAME
+          value: claude-bridge-agent
+        - name: AGENT_DESCRIPTION
+          value: "Claude-powered bridge agent (Phase 1 MVP)"
+        - name: AGENT_MODEL
+          value: claude-sonnet-4-6
+        - name: AGENT_ALLOWED_TOOLS
+          value: "Read,Bash"
+        - name: ANTHROPIC_API_KEY
+          valueFrom:
+            secretKeyRef:
+              name: anthropic-secret
+              key: ANTHROPIC_API_KEY
+        - name: ANTHROPIC_BASE_URL
+          valueFrom:
+            secretKeyRef:
+              name: anthropic-secret
+              key: ANTHROPIC_BASE_URL
+      resources:
+        requests:
+          cpu: "50m"
+          memory: "128Mi"
+        limits:
+          cpu: "1"
+          memory: "512Mi"

@@ -1,0 +1,14 @@
+apiVersion: kagent.dev/v1alpha2
+kind: Agent
+metadata:
+  name: kimi-test-agent
+  namespace: kagent
+spec:
+  description: "Native Kagent agent using Anthropic API via Kimi base URL"
+  type: Declarative
+  declarative:
+    modelConfig: claude-via-kimi
+    systemMessage: "You are a helpful assistant. Reply concisely."
+    stream: false
+    runtime: go
+    a2aConfig: {}

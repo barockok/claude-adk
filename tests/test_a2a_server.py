@@ -9,7 +9,7 @@ def test_agent_card(client):
     assert r.status_code == 200
     body = r.json()
     assert body["name"] == "test-agent"
-    assert body["capabilities"]["streaming"] is False
+    assert body["capabilities"]["streaming"] is True
 
 
 def test_message_send_returns_task_with_result(client, fake_runner):
@@ -54,7 +54,7 @@ def test_unsupported_method_returns_jsonrpc_error(client):
     payload = {
         "jsonrpc": "2.0",
         "id": "req-3",
-        "method": "message/stream",
+        "method": "tasks/cancel",
         "params": {},
     }
     r = client.post("/", json=payload)
@@ -82,3 +82,27 @@ def test_get_task_returns_persisted_task(client):
 def test_get_task_unknown_returns_404(client):
     r = client.get("/tasks/does-not-exist")
     assert r.status_code == 404
+
+
+def test_message_stream_emits_sse_events(client, fake_runner):
+    import json
+
+    fake_runner.final_text = "streamed hello"
+    payload = {
+        "jsonrpc": "2.0",
+        "id": "req-s",
+        "method": "message/stream",
+        "params": {"message": {"role": "user", "parts": [{"kind": "text", "text": "hi"}]}},
+    }
+    with client.stream("POST", "/", json=payload) as r:
+        assert r.status_code == 200
+        assert r.headers["content-type"].startswith("text/event-stream")
+        body = b"".join(r.iter_bytes()).decode()
+
+    frames = [line[len("data: "):] for line in body.splitlines() if line.startswith("data: ")]
+    assert len(frames) >= 3  # task + working + completed
+    parsed = [json.loads(f) for f in frames]
+    assert parsed[0]["result"]["kind"] == "task"
+    assert parsed[-1]["result"]["status"]["state"] == "completed"
+    assert parsed[-1]["result"]["final"] is True
+    assert parsed[-1]["result"]["status"]["message"]["parts"][0]["text"] == "streamed hello"

@@ -15,7 +15,7 @@ def test_build_agent_card_from_settings(monkeypatch):
     assert card.description == "SRE helper"
     assert card.url == "http://sre-agent.kagent.svc:8080"
     assert card.version == "1.0.0"
-    assert card.capabilities.streaming is False
+    assert card.capabilities.streaming is True
     tool_ids = {s.id for s in card.skills}
     assert "Bash" in tool_ids
     assert "Read" in tool_ids

@@ -19,6 +19,6 @@ def build_agent_card(settings: Settings) -> AgentCard:
         description=settings.agent_description or f"Claude-powered agent: {settings.agent_name}",
         url=url,
         version="1.0.0",
-        capabilities=AgentCapabilities(streaming=False),
+        capabilities=AgentCapabilities(streaming=True),
         skills=skills,
     )
