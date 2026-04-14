@@ -26,3 +26,24 @@ def test_build_options_omits_empty_system_prompt(monkeypatch):
     opts = build_options(Settings())
 
     assert opts.system_prompt in (None, "")
+
+
+def test_build_options_injects_memory_mcp_when_provided(monkeypatch):
+    monkeypatch.setenv("ANTHROPIC_API_KEY", "sk")
+    monkeypatch.setenv("AGENT_NAME", "x")
+
+    sentinel = object()
+    opts = build_options(Settings(), memory_mcp_server=sentinel)
+
+    assert "bridge-memory" in opts.mcp_servers
+    assert opts.mcp_servers["bridge-memory"] is sentinel
+
+
+def test_build_options_omits_memory_mcp_when_not_provided(monkeypatch):
+    monkeypatch.setenv("ANTHROPIC_API_KEY", "sk")
+    monkeypatch.setenv("AGENT_NAME", "x")
+
+    opts = build_options(Settings())
+
+    mcp = getattr(opts, "mcp_servers", {}) or {}
+    assert "bridge-memory" not in mcp
