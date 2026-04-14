@@ -47,3 +47,35 @@ def test_settings_missing_required_raises(monkeypatch):
     monkeypatch.delenv("AGENT_NAME", raising=False)
     with pytest.raises(ValidationError):
         Settings()
+
+
+def test_memory_defaults(monkeypatch):
+    monkeypatch.setenv("ANTHROPIC_API_KEY", "sk")
+    monkeypatch.setenv("AGENT_NAME", "a")
+    monkeypatch.delenv("REDIS_URL", raising=False)
+    monkeypatch.delenv("MEMORY_ENABLED", raising=False)
+
+    s = Settings()
+
+    assert s.memory_enabled is True
+    assert s.redis_url == ""
+
+
+def test_memory_redis_configured(monkeypatch):
+    monkeypatch.setenv("ANTHROPIC_API_KEY", "sk")
+    monkeypatch.setenv("AGENT_NAME", "a")
+    monkeypatch.setenv("REDIS_URL", "redis://localhost:6379/0")
+
+    s = Settings()
+
+    assert s.redis_url == "redis://localhost:6379/0"
+
+
+def test_memory_can_be_disabled(monkeypatch):
+    monkeypatch.setenv("ANTHROPIC_API_KEY", "sk")
+    monkeypatch.setenv("AGENT_NAME", "a")
+    monkeypatch.setenv("MEMORY_ENABLED", "false")
+
+    s = Settings()
+
+    assert s.memory_enabled is False

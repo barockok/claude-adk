@@ -42,6 +42,8 @@ class Settings(BaseSettings):
     bridge_port: int = Field(default=8080, validation_alias="BRIDGE_PORT")
     bridge_host: str = Field(default="0.0.0.0", validation_alias="BRIDGE_HOST")
     agent_url: str = Field(default="", validation_alias="AGENT_URL")
+    memory_enabled: bool = Field(default=True, validation_alias="MEMORY_ENABLED")
+    redis_url: str = Field(default="", validation_alias="REDIS_URL")
 
     @classmethod
     def settings_customise_sources(
@@ -73,4 +75,11 @@ class Settings(BaseSettings):
             if not v.strip():
                 return {}
             return json.loads(v)
+        return v
+
+    @field_validator("memory_enabled", mode="before")
+    @classmethod
+    def _parse_bool(cls, v: Any) -> Any:
+        if isinstance(v, str):
+            return v.lower() not in ("false", "0", "no")
         return v
