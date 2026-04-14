@@ -28,3 +28,39 @@ class InMemorySessionStore:
         needle = query.lower()
         hits = [m for m in self._memories.get(context_id, []) if needle in m.lower()]
         return hits[:limit]
+
+
+from redis.asyncio import Redis
+
+
+class RedisSessionStore:
+    """Redis-backed SessionStore. Keys:
+        session:{context_id}:state:{key}   -> STRING value
+        session:{context_id}:memories      -> LIST of content strings
+    """
+
+    def __init__(self, client: "Redis") -> None:
+        self._r = client
+
+    @staticmethod
+    def _state_key(context_id: str, key: str) -> str:
+        return f"session:{context_id}:state:{key}"
+
+    @staticmethod
+    def _memories_key(context_id: str) -> str:
+        return f"session:{context_id}:memories"
+
+    async def get_state(self, context_id: str, key: str) -> str | None:
+        return await self._r.get(self._state_key(context_id, key))
+
+    async def set_state(self, context_id: str, key: str, value: str) -> None:
+        await self._r.set(self._state_key(context_id, key), value)
+
+    async def save_memory(self, context_id: str, content: str) -> None:
+        await self._r.rpush(self._memories_key(context_id), content)
+
+    async def search_memory(self, context_id: str, query: str, limit: int = 10) -> list[str]:
+        all_items = await self._r.lrange(self._memories_key(context_id), 0, -1)
+        needle = query.lower()
+        hits = [m for m in all_items if needle in m.lower()]
+        return hits[:limit]
