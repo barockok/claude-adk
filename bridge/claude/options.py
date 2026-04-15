@@ -17,6 +17,7 @@ def build_options(
         "model": settings.agent_model,
         "max_turns": settings.agent_max_turns,
         "allowed_tools": list(settings.agent_allowed_tools),
+        "include_partial_messages": True,
     }
     if settings.agent_system_prompt:
         kwargs["system_prompt"] = settings.agent_system_prompt
