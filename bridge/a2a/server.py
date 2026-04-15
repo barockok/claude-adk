@@ -139,6 +139,11 @@ def build_router(
             return StreamingResponse(
                 _stream_via_adapter(rpc_req),
                 media_type="text/event-stream",
+                headers={
+                    "Cache-Control": "no-cache",
+                    "Connection": "keep-alive",
+                    "X-Accel-Buffering": "no",
+                },
             )
 
         return JsonRpcResponse(

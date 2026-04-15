@@ -128,6 +128,17 @@ async def claude_to_sse(
                     "append": True,
                     "lastChunk": False,
                 })
+                yield _frame(rpc_id, {
+                    "kind": "status-update",
+                    "taskId": task_id,
+                    "contextId": context_id,
+                    "status": {
+                        "state": "working",
+                        "timestamp": _now(),
+                        "message": {"role": "agent", "parts": [_text_part("".join(assistant_chunks))]},
+                    },
+                    "final": False,
+                })
             continue
 
         # Non-StreamEvent path: AssistantMessage / ResultMessage / ToolUse blocks.
